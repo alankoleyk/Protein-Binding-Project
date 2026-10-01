@@ -6,14 +6,25 @@ This is an early project skeleton. Most modules are still placeholders. The curr
 
 Install [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) first. Run the following commands from the project root, where this README is located.
 
-Install the recorded development package versions:
+Use `environment.yml` as the shared environment definition. It includes Python 3.12 and the project's Python dependencies.
+
+Create the environment once:
 
 ```bash
-python -m pip install -r requirements-dev.txt
+micromamba create -n ProteinBinding -f environment.yml -y
 ```
-When returning to the project later, activate the existing environment before running Python. There is no need to recreate it each time.
 
-If any new packages are installed in the active environment, refresh `requirements-dev.txt` with `python -m pip freeze > requirements-dev.txt` (replace any local `file://` entries with `package==version`), update `environment.yml` to match, and commit both files so we can rerun the install command above.
+Activate it before running the project:
+
+```bash
+micromamba activate ProteinBinding
+```
+
+When adding a package, apply changes to an existing environment with:
+
+```bash
+micromamba env update -n ProteinBinding -f environment.yml
+```
 
 ## Download the 3D viewer library
 
@@ -43,8 +54,7 @@ The comments below describe the intended responsibilities of the placeholder mod
 
 ```text
 .
-├── environment.yml             # micromamba environment definition
-├── requirements-dev.txt        # Recorded Python package versions
+├── environment.yml             # Primary environment and dependency definition
 ├── README.md
 ├── reference/
 │   └── hras_project/           # Alan's existing example code and structure data
@@ -79,4 +89,4 @@ The GUI will follow a lightweight MVP structure: the **View** displays informati
 
 ## Message board
 
-**Julian**: This is the initial structure I've put together to get us started. **I am open to any change**, so please feel free to suggest a different layout or approach if it works better for the team. Please put your backend code in **`src/backend/`** and design the functions however makes sense for your work. Once your code is ready, I'll read through it and write the adapters to connect it to the GUI. A short usage example showing the inputs and outputs would be really helpful when we get to that point.
+**Julian**: This is the initial structure I've put together to get us started. **I am open to any change**, so please feel free to suggest a different layout or approach if it works better for the team. Please put your backend code in **`src/backend/`** and design the functions however makes sense for your work. Once your code is ready, I'll read through it and write the adapters to connect it to the GUI. A short usage example showing the inputs and outputs would be really helpful when we get to that point. Thanks! 
