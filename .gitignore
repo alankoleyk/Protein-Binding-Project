@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Local environments
+.venv/
+venv/
+env/
+.mamba/
+
+# Tests, coverage and analysis caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Build and packaging outputs
+build/
+dist/
+*.egg-info/
+*.egg
+*.app/
+*.dmg
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Logs and notebook checkpoints
+*.log
+.ipynb_checkpoints/
+
+# All resources directories and their contents
+**/resources/
