@@ -14,6 +14,21 @@ from view import MainWindow
 from viewer import MoleculeView
 
 
+def create_window():
+    window = MainWindow(MoleculeView())
+    tasks = QtTaskRunner()
+    presenter = MainPresenter(window, DemoBackend(), tasks)
+    window.residue_selected.connect(presenter.select_residue)
+    window.cutoff_changed.connect(presenter.set_cutoff)
+    window.replacement_changed.connect(presenter.set_replacement)
+    window.chain_changed.connect(presenter.set_sequence_chain)
+    window.highlight_changed.connect(presenter.set_highlight)
+    window.representation_changed.connect(presenter.set_representation)
+    window.prediction_requested.connect(presenter.predict)
+    presenter.start()
+    return window, presenter, tasks
+
+
 def main() -> int:
     app = QApplication(sys.argv)
     app.setApplicationName("ProteinBinding")
@@ -27,19 +42,8 @@ def main() -> int:
     palette.setColor(QPalette.ColorRole.ButtonText, QColor("#dce4ed"))
     app.setPalette(palette)
     app.setStyleSheet(Path(__file__).with_name("style.qss").read_text())
-
-    window = MainWindow(MoleculeView())
-    tasks = QtTaskRunner()
-    presenter = MainPresenter(window, DemoBackend(), tasks)
-    window.residue_selected.connect(presenter.select_residue)
-    window.cutoff_changed.connect(presenter.set_cutoff)
-    window.replacement_changed.connect(presenter.set_replacement)
-    window.chain_changed.connect(presenter.set_sequence_chain)
-    window.highlight_changed.connect(presenter.set_highlight)
-    window.representation_changed.connect(presenter.set_representation)
-    window.prediction_requested.connect(presenter.predict)
+    window, presenter, tasks = create_window()
     app.aboutToQuit.connect(tasks.wait_for_done)
-    presenter.start()
     window.show()
     return app.exec()
 
