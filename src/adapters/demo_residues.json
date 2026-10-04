@@ -1,0 +1,3961 @@
+[
+  {
+    "chain": "A",
+    "number": 3,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 4,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 5,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 6,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 7,
+    "name": "PHE",
+    "letter": "F",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 8,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 9,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 10,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 11,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 12,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 13,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 14,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 15,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 16,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 17,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 18,
+    "name": "HIS",
+    "letter": "H",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 19,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 20,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 21,
+    "name": "PRO",
+    "letter": "P",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 22,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 23,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 24,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 25,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 26,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 27,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": [
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 2.949
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 3.801
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 4.553
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 5.107
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 6.848
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 6.895
+      },
+      {
+        "name": "LEU",
+        "number": 41,
+        "chain": "D",
+        "distance": 7.183
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 7.323
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 7.569
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 28,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": [
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 7.342
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 7.463
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 29,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 30,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 31,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": [
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 5.469
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 6.526
+      },
+      {
+        "name": "TYR",
+        "number": 47,
+        "chain": "D",
+        "distance": 6.755
+      },
+      {
+        "name": "ALA",
+        "number": 82,
+        "chain": "D",
+        "distance": 7.066
+      },
+      {
+        "name": "GLY",
+        "number": 81,
+        "chain": "D",
+        "distance": 7.311
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 7.403
+      },
+      {
+        "name": "LEU",
+        "number": 41,
+        "chain": "D",
+        "distance": 7.442
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 32,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 33,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 34,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 35,
+    "name": "TRP",
+    "letter": "W",
+    "neighbors": [
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 3.911
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 4.021
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 5.571
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 6.972
+      },
+      {
+        "name": "LEU",
+        "number": 41,
+        "chain": "D",
+        "distance": 7.885
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 36,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": [
+      {
+        "name": "VAL",
+        "number": 45,
+        "chain": "D",
+        "distance": 6.439
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 6.463
+      },
+      {
+        "name": "TYR",
+        "number": 47,
+        "chain": "D",
+        "distance": 6.481
+      },
+      {
+        "name": "GLU",
+        "number": 46,
+        "chain": "D",
+        "distance": 6.591
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 7.147
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 37,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 3.421
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 3.424
+      },
+      {
+        "name": "VAL",
+        "number": 45,
+        "chain": "D",
+        "distance": 4.688
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 5.105
+      },
+      {
+        "name": "GLU",
+        "number": 46,
+        "chain": "D",
+        "distance": 6.281
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 6.286
+      },
+      {
+        "name": "LEU",
+        "number": 41,
+        "chain": "D",
+        "distance": 6.595
+      },
+      {
+        "name": "TYR",
+        "number": 47,
+        "chain": "D",
+        "distance": 6.822
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 6.973
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 38,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 3.499
+      },
+      {
+        "name": "GLU",
+        "number": 46,
+        "chain": "D",
+        "distance": 3.722
+      },
+      {
+        "name": "VAL",
+        "number": 45,
+        "chain": "D",
+        "distance": 4.314
+      },
+      {
+        "name": "TYR",
+        "number": 47,
+        "chain": "D",
+        "distance": 4.868
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 5.957
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 7.759
+      },
+      {
+        "name": "PRO",
+        "number": 48,
+        "chain": "D",
+        "distance": 7.801
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 39,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 5.872
+      },
+      {
+        "name": "VAL",
+        "number": 45,
+        "chain": "D",
+        "distance": 6.95
+      },
+      {
+        "name": "GLU",
+        "number": 46,
+        "chain": "D",
+        "distance": 7.075
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 40,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 6.888
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 7.907
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 41,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 42,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 43,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 44,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 45,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 46,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 47,
+    "name": "PRO",
+    "letter": "P",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 48,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 49,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 50,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 51,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 6.407
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 6.941
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 7.058
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 52,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 53,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 54,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 6.41
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 6.746
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 7.262
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 7.915
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 55,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 4.902
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 7.058
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 7.762
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 56,
+    "name": "PHE",
+    "letter": "F",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 3.514
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 6.215
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 6.527
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 7.053
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 7.17
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 7.322
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 57,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 4.515
+      },
+      {
+        "name": "GLU",
+        "number": 76,
+        "chain": "D",
+        "distance": 5.384
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 5.959
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 6.862
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 58,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 3.697
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 7.142
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 7.685
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 59,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 2.877
+      },
+      {
+        "name": "GLU",
+        "number": 76,
+        "chain": "D",
+        "distance": 2.965
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 3.263
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 3.778
+      },
+      {
+        "name": "VAL",
+        "number": 73,
+        "chain": "D",
+        "distance": 4.268
+      },
+      {
+        "name": "GLN",
+        "number": 72,
+        "chain": "D",
+        "distance": 5.773
+      },
+      {
+        "name": "GLU",
+        "number": 80,
+        "chain": "D",
+        "distance": 5.862
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 6.515
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 6.517
+      },
+      {
+        "name": "ALA",
+        "number": 77,
+        "chain": "D",
+        "distance": 6.633
+      },
+      {
+        "name": "SER",
+        "number": 69,
+        "chain": "D",
+        "distance": 6.736
+      },
+      {
+        "name": "LEU",
+        "number": 37,
+        "chain": "D",
+        "distance": 6.74
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 6.758
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 7.112
+      },
+      {
+        "name": "PHE",
+        "number": 74,
+        "chain": "D",
+        "distance": 7.218
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 60,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 2.836
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 3.375
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 3.383
+      },
+      {
+        "name": "GLU",
+        "number": 32,
+        "chain": "D",
+        "distance": 5.354
+      },
+      {
+        "name": "HIS",
+        "number": 17,
+        "chain": "D",
+        "distance": 5.759
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 6.455
+      },
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 7.162
+      },
+      {
+        "name": "SER",
+        "number": 69,
+        "chain": "D",
+        "distance": 7.309
+      },
+      {
+        "name": "ILE",
+        "number": 13,
+        "chain": "D",
+        "distance": 7.338
+      },
+      {
+        "name": "LEU",
+        "number": 37,
+        "chain": "D",
+        "distance": 7.446
+      },
+      {
+        "name": "VAL",
+        "number": 70,
+        "chain": "D",
+        "distance": 7.686
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 61,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 5.162
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 7.393
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 62,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": [
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 4.487
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 5.559
+      },
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 6.591
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 6.847
+      },
+      {
+        "name": "GLU",
+        "number": 32,
+        "chain": "D",
+        "distance": 7.017
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 7.689
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 63,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 7.066
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 64,
+    "name": "PRO",
+    "letter": "P",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 65,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 66,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 67,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 68,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 69,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 70,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 71,
+    "name": "TRP",
+    "letter": "W",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 72,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 73,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 4.486
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 4.88
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 5.896
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 6.532
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 7.825
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 74,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 7.957
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 75,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 5.202
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 7.022
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 7.393
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 76,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 77,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 78,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 79,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 80,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 81,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 7.098
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 82,
+    "name": "PHE",
+    "letter": "F",
+    "neighbors": [
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 3.607
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 5.687
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 6.706
+      },
+      {
+        "name": "PRO",
+        "number": 27,
+        "chain": "D",
+        "distance": 7.229
+      },
+      {
+        "name": "VAL",
+        "number": 45,
+        "chain": "D",
+        "distance": 7.962
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 83,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 2.497
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 2.652
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 3.066
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 3.346
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 5.15
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 5.526
+      },
+      {
+        "name": "PRO",
+        "number": 27,
+        "chain": "D",
+        "distance": 5.573
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 6.811
+      },
+      {
+        "name": "LEU",
+        "number": 41,
+        "chain": "D",
+        "distance": 7.233
+      },
+      {
+        "name": "VAL",
+        "number": 45,
+        "chain": "D",
+        "distance": 7.516
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 7.629
+      },
+      {
+        "name": "GLU",
+        "number": 28,
+        "chain": "D",
+        "distance": 7.91
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 84,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": [
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 3.13
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 5.082
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 5.504
+      },
+      {
+        "name": "PRO",
+        "number": 27,
+        "chain": "D",
+        "distance": 6.826
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 7.33
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 85,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": [
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 3.55
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 6.568
+      },
+      {
+        "name": "TYR",
+        "number": 30,
+        "chain": "D",
+        "distance": 6.587
+      },
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 7.152
+      },
+      {
+        "name": "PRO",
+        "number": 27,
+        "chain": "D",
+        "distance": 7.401
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 7.478
+      },
+      {
+        "name": "GLU",
+        "number": 28,
+        "chain": "D",
+        "distance": 7.755
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 86,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": [
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 6.372
+      },
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 7.609
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 87,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 2.926
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 4.313
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 6.196
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 6.725
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 6.906
+      },
+      {
+        "name": "PRO",
+        "number": 27,
+        "chain": "D",
+        "distance": 7.339
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 7.498
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 7.58
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 88,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 89,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 7.723
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 90,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 91,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 92,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 93,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 94,
+    "name": "TRP",
+    "letter": "W",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 95,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 96,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 97,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 98,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 99,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": [
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 7.399
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 7.913
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 100,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": [
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 6.445
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 101,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": [
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 4.426
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 4.58
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 5.329
+      },
+      {
+        "name": "TYR",
+        "number": 30,
+        "chain": "D",
+        "distance": 5.765
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 6.46
+      },
+      {
+        "name": "GLU",
+        "number": 32,
+        "chain": "D",
+        "distance": 6.785
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 102,
+    "name": "HIS",
+    "letter": "H",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 2.805
+      },
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 3.035
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 3.221
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 3.363
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 3.54
+      },
+      {
+        "name": "TYR",
+        "number": 30,
+        "chain": "D",
+        "distance": 3.754
+      },
+      {
+        "name": "PRO",
+        "number": 27,
+        "chain": "D",
+        "distance": 4.706
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 4.944
+      },
+      {
+        "name": "LEU",
+        "number": 37,
+        "chain": "D",
+        "distance": 5.422
+      },
+      {
+        "name": "GLU",
+        "number": 32,
+        "chain": "D",
+        "distance": 5.432
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 5.545
+      },
+      {
+        "name": "TRP",
+        "number": 44,
+        "chain": "D",
+        "distance": 6.974
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 7.074
+      },
+      {
+        "name": "LEU",
+        "number": 26,
+        "chain": "D",
+        "distance": 7.205
+      },
+      {
+        "name": "GLU",
+        "number": 28,
+        "chain": "D",
+        "distance": 7.386
+      },
+      {
+        "name": "GLY",
+        "number": 43,
+        "chain": "D",
+        "distance": 7.464
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 7.497
+      },
+      {
+        "name": "LEU",
+        "number": 41,
+        "chain": "D",
+        "distance": 7.579
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 103,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 39,
+        "chain": "D",
+        "distance": 3.358
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 3.599
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 3.721
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 3.811
+      },
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 5.576
+      },
+      {
+        "name": "LEU",
+        "number": 37,
+        "chain": "D",
+        "distance": 6.035
+      },
+      {
+        "name": "ALA",
+        "number": 40,
+        "chain": "D",
+        "distance": 6.352
+      },
+      {
+        "name": "TRP",
+        "number": 38,
+        "chain": "D",
+        "distance": 6.42
+      },
+      {
+        "name": "LEU",
+        "number": 34,
+        "chain": "D",
+        "distance": 6.815
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 6.845
+      },
+      {
+        "name": "THR",
+        "number": 42,
+        "chain": "D",
+        "distance": 7.257
+      },
+      {
+        "name": "TYR",
+        "number": 30,
+        "chain": "D",
+        "distance": 7.374
+      },
+      {
+        "name": "GLU",
+        "number": 32,
+        "chain": "D",
+        "distance": 7.473
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 104,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": [
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 3.26
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 3.568
+      },
+      {
+        "name": "TYR",
+        "number": 30,
+        "chain": "D",
+        "distance": 4.651
+      },
+      {
+        "name": "TYR",
+        "number": 29,
+        "chain": "D",
+        "distance": 4.839
+      },
+      {
+        "name": "GLU",
+        "number": 32,
+        "chain": "D",
+        "distance": 5.393
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 6.501
+      },
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 7.001
+      },
+      {
+        "name": "GLU",
+        "number": 28,
+        "chain": "D",
+        "distance": 7.796
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 105,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": [
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 6.194
+      },
+      {
+        "name": "GLY",
+        "number": 31,
+        "chain": "D",
+        "distance": 7.507
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 106,
+    "name": "PHE",
+    "letter": "F",
+    "neighbors": [
+      {
+        "name": "ASP",
+        "number": 35,
+        "chain": "D",
+        "distance": 4.98
+      },
+      {
+        "name": "ASN",
+        "number": 33,
+        "chain": "D",
+        "distance": 6.561
+      },
+      {
+        "name": "ALA",
+        "number": 36,
+        "chain": "D",
+        "distance": 7.728
+      }
+    ]
+  },
+  {
+    "chain": "A",
+    "number": 107,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 108,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 109,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "A",
+    "number": 110,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 1,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 2,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 3,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 4,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 5,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 6,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 7,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 8,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 9,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 10,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 11,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 12,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 13,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": [
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 7.338
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 14,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 15,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 16,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 17,
+    "name": "HIS",
+    "letter": "H",
+    "neighbors": [
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 5.759
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 18,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 19,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 20,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 21,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 22,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 23,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 24,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 25,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 26,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 7.205
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 27,
+    "name": "PRO",
+    "letter": "P",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 4.706
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 5.573
+      },
+      {
+        "name": "ASN",
+        "number": 84,
+        "chain": "A",
+        "distance": 6.826
+      },
+      {
+        "name": "PHE",
+        "number": 82,
+        "chain": "A",
+        "distance": 7.229
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 7.339
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 7.401
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 28,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 7.386
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 7.755
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 7.796
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 7.91
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 29,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 2.652
+      },
+      {
+        "name": "ASN",
+        "number": 84,
+        "chain": "A",
+        "distance": 3.13
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 3.54
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 3.55
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 4.313
+      },
+      {
+        "name": "ASP",
+        "number": 101,
+        "chain": "A",
+        "distance": 4.58
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 4.839
+      },
+      {
+        "name": "PHE",
+        "number": 82,
+        "chain": "A",
+        "distance": 5.687
+      },
+      {
+        "name": "ASP",
+        "number": 86,
+        "chain": "A",
+        "distance": 6.372
+      },
+      {
+        "name": "THR",
+        "number": 100,
+        "chain": "A",
+        "distance": 6.445
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 6.845
+      },
+      {
+        "name": "ASP",
+        "number": 75,
+        "chain": "A",
+        "distance": 7.393
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 30,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 3.754
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 4.651
+      },
+      {
+        "name": "ASP",
+        "number": 101,
+        "chain": "A",
+        "distance": 5.765
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 6.587
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 7.374
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 31,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 3.035
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 3.26
+      },
+      {
+        "name": "ASP",
+        "number": 101,
+        "chain": "A",
+        "distance": 4.426
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 5.576
+      },
+      {
+        "name": "LYS",
+        "number": 62,
+        "chain": "A",
+        "distance": 6.591
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 7.152
+      },
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 7.162
+      },
+      {
+        "name": "THR",
+        "number": 105,
+        "chain": "A",
+        "distance": 7.507
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 32,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 5.354
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 5.393
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 5.432
+      },
+      {
+        "name": "ASP",
+        "number": 101,
+        "chain": "A",
+        "distance": 6.785
+      },
+      {
+        "name": "LYS",
+        "number": 62,
+        "chain": "A",
+        "distance": 7.017
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 7.473
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 33,
+    "name": "ASN",
+    "letter": "N",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 3.221
+      },
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 3.383
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 3.568
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 3.599
+      },
+      {
+        "name": "LYS",
+        "number": 62,
+        "chain": "A",
+        "distance": 4.487
+      },
+      {
+        "name": "ASP",
+        "number": 101,
+        "chain": "A",
+        "distance": 5.329
+      },
+      {
+        "name": "THR",
+        "number": 105,
+        "chain": "A",
+        "distance": 6.194
+      },
+      {
+        "name": "PHE",
+        "number": 106,
+        "chain": "A",
+        "distance": 6.561
+      },
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 6.758
+      },
+      {
+        "name": "PHE",
+        "number": 56,
+        "chain": "A",
+        "distance": 7.053
+      },
+      {
+        "name": "THR",
+        "number": 99,
+        "chain": "A",
+        "distance": 7.399
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 34,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": [
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 2.836
+      },
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 3.778
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 6.815
+      },
+      {
+        "name": "LYS",
+        "number": 62,
+        "chain": "A",
+        "distance": 6.847
+      },
+      {
+        "name": "ASN",
+        "number": 58,
+        "chain": "A",
+        "distance": 7.142
+      },
+      {
+        "name": "PHE",
+        "number": 56,
+        "chain": "A",
+        "distance": 7.322
+      },
+      {
+        "name": "GLY",
+        "number": 61,
+        "chain": "A",
+        "distance": 7.393
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 7.497
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 35,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 2.877
+      },
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 3.375
+      },
+      {
+        "name": "PHE",
+        "number": 56,
+        "chain": "A",
+        "distance": 3.514
+      },
+      {
+        "name": "ASN",
+        "number": 58,
+        "chain": "A",
+        "distance": 3.697
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 3.811
+      },
+      {
+        "name": "SER",
+        "number": 57,
+        "chain": "A",
+        "distance": 4.515
+      },
+      {
+        "name": "PHE",
+        "number": 106,
+        "chain": "A",
+        "distance": 4.98
+      },
+      {
+        "name": "GLY",
+        "number": 61,
+        "chain": "A",
+        "distance": 5.162
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 5.545
+      },
+      {
+        "name": "LYS",
+        "number": 62,
+        "chain": "A",
+        "distance": 5.559
+      },
+      {
+        "name": "GLU",
+        "number": 73,
+        "chain": "A",
+        "distance": 5.896
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 7.001
+      },
+      {
+        "name": "LEU",
+        "number": 63,
+        "chain": "A",
+        "distance": 7.066
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 7.323
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 7.58
+      },
+      {
+        "name": "LEU",
+        "number": 89,
+        "chain": "A",
+        "distance": 7.723
+      },
+      {
+        "name": "THR",
+        "number": 99,
+        "chain": "A",
+        "distance": 7.913
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 36,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 3.363
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 3.721
+      },
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 6.455
+      },
+      {
+        "name": "ASP",
+        "number": 101,
+        "chain": "A",
+        "distance": 6.46
+      },
+      {
+        "name": "GLN",
+        "number": 104,
+        "chain": "A",
+        "distance": 6.501
+      },
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 6.517
+      },
+      {
+        "name": "PHE",
+        "number": 56,
+        "chain": "A",
+        "distance": 6.527
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 7.498
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 7.629
+      },
+      {
+        "name": "LYS",
+        "number": 62,
+        "chain": "A",
+        "distance": 7.689
+      },
+      {
+        "name": "PHE",
+        "number": 106,
+        "chain": "A",
+        "distance": 7.728
+      },
+      {
+        "name": "GLU",
+        "number": 73,
+        "chain": "A",
+        "distance": 7.825
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 37,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 5.422
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 6.035
+      },
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 6.74
+      },
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 7.446
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 38,
+    "name": "TRP",
+    "letter": "W",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 3.263
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 3.801
+      },
+      {
+        "name": "GLU",
+        "number": 73,
+        "chain": "A",
+        "distance": 4.88
+      },
+      {
+        "name": "ILE",
+        "number": 55,
+        "chain": "A",
+        "distance": 4.902
+      },
+      {
+        "name": "SER",
+        "number": 57,
+        "chain": "A",
+        "distance": 5.959
+      },
+      {
+        "name": "PHE",
+        "number": 56,
+        "chain": "A",
+        "distance": 6.215
+      },
+      {
+        "name": "ASP",
+        "number": 54,
+        "chain": "A",
+        "distance": 6.41
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 6.42
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 6.811
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 7.074
+      },
+      {
+        "name": "ASN",
+        "number": 58,
+        "chain": "A",
+        "distance": 7.685
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 39,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 2.497
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 2.805
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 2.926
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 3.358
+      },
+      {
+        "name": "GLU",
+        "number": 73,
+        "chain": "A",
+        "distance": 4.486
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 4.553
+      },
+      {
+        "name": "ASN",
+        "number": 84,
+        "chain": "A",
+        "distance": 5.082
+      },
+      {
+        "name": "ASP",
+        "number": 75,
+        "chain": "A",
+        "distance": 5.202
+      },
+      {
+        "name": "ILE",
+        "number": 51,
+        "chain": "A",
+        "distance": 6.407
+      },
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 6.515
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 6.568
+      },
+      {
+        "name": "TRP",
+        "number": 35,
+        "chain": "A",
+        "distance": 6.972
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 6.973
+      },
+      {
+        "name": "PHE",
+        "number": 56,
+        "chain": "A",
+        "distance": 7.17
+      },
+      {
+        "name": "ASP",
+        "number": 86,
+        "chain": "A",
+        "distance": 7.609
+      },
+      {
+        "name": "ASP",
+        "number": 54,
+        "chain": "A",
+        "distance": 7.915
+      },
+      {
+        "name": "ALA",
+        "number": 74,
+        "chain": "A",
+        "distance": 7.957
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 40,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": [
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 4.944
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 5.526
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 6.286
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 6.352
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 6.848
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 6.906
+      },
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 7.759
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 41,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": [
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 6.595
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 7.183
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 7.233
+      },
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 7.442
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 7.579
+      },
+      {
+        "name": "TRP",
+        "number": 35,
+        "chain": "A",
+        "distance": 7.885
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 42,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": [
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 2.949
+      },
+      {
+        "name": "TRP",
+        "number": 35,
+        "chain": "A",
+        "distance": 4.021
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 5.105
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 5.15
+      },
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 5.469
+      },
+      {
+        "name": "GLU",
+        "number": 73,
+        "chain": "A",
+        "distance": 6.532
+      },
+      {
+        "name": "ILE",
+        "number": 51,
+        "chain": "A",
+        "distance": 7.058
+      },
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 7.112
+      },
+      {
+        "name": "TYR",
+        "number": 103,
+        "chain": "A",
+        "distance": 7.257
+      },
+      {
+        "name": "ASP",
+        "number": 54,
+        "chain": "A",
+        "distance": 7.262
+      },
+      {
+        "name": "SER",
+        "number": 28,
+        "chain": "A",
+        "distance": 7.342
+      },
+      {
+        "name": "ILE",
+        "number": 55,
+        "chain": "A",
+        "distance": 7.762
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 43,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 3.066
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 3.424
+      },
+      {
+        "name": "TRP",
+        "number": 35,
+        "chain": "A",
+        "distance": 3.911
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 5.107
+      },
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 5.957
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 6.196
+      },
+      {
+        "name": "PHE",
+        "number": 82,
+        "chain": "A",
+        "distance": 6.706
+      },
+      {
+        "name": "ILE",
+        "number": 51,
+        "chain": "A",
+        "distance": 6.941
+      },
+      {
+        "name": "ASP",
+        "number": 75,
+        "chain": "A",
+        "distance": 7.022
+      },
+      {
+        "name": "VAL",
+        "number": 36,
+        "chain": "A",
+        "distance": 7.147
+      },
+      {
+        "name": "ASN",
+        "number": 84,
+        "chain": "A",
+        "distance": 7.33
+      },
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 7.403
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 7.464
+      },
+      {
+        "name": "GLY",
+        "number": 40,
+        "chain": "A",
+        "distance": 7.907
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 44,
+    "name": "TRP",
+    "letter": "W",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 3.346
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 3.421
+      },
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 3.499
+      },
+      {
+        "name": "PHE",
+        "number": 82,
+        "chain": "A",
+        "distance": 3.607
+      },
+      {
+        "name": "ASN",
+        "number": 84,
+        "chain": "A",
+        "distance": 5.504
+      },
+      {
+        "name": "TRP",
+        "number": 35,
+        "chain": "A",
+        "distance": 5.571
+      },
+      {
+        "name": "LYS",
+        "number": 39,
+        "chain": "A",
+        "distance": 5.872
+      },
+      {
+        "name": "VAL",
+        "number": 36,
+        "chain": "A",
+        "distance": 6.463
+      },
+      {
+        "name": "ARG",
+        "number": 87,
+        "chain": "A",
+        "distance": 6.725
+      },
+      {
+        "name": "GLY",
+        "number": 40,
+        "chain": "A",
+        "distance": 6.888
+      },
+      {
+        "name": "HIS",
+        "number": 102,
+        "chain": "A",
+        "distance": 6.974
+      },
+      {
+        "name": "GLY",
+        "number": 81,
+        "chain": "A",
+        "distance": 7.098
+      },
+      {
+        "name": "SER",
+        "number": 85,
+        "chain": "A",
+        "distance": 7.478
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 7.569
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 45,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": [
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 4.314
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 4.688
+      },
+      {
+        "name": "VAL",
+        "number": 36,
+        "chain": "A",
+        "distance": 6.439
+      },
+      {
+        "name": "LYS",
+        "number": 39,
+        "chain": "A",
+        "distance": 6.95
+      },
+      {
+        "name": "ARG",
+        "number": 83,
+        "chain": "A",
+        "distance": 7.516
+      },
+      {
+        "name": "PHE",
+        "number": 82,
+        "chain": "A",
+        "distance": 7.962
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 46,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 3.722
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 6.281
+      },
+      {
+        "name": "VAL",
+        "number": 36,
+        "chain": "A",
+        "distance": 6.591
+      },
+      {
+        "name": "LYS",
+        "number": 39,
+        "chain": "A",
+        "distance": 7.075
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 47,
+    "name": "TYR",
+    "letter": "Y",
+    "neighbors": [
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 4.868
+      },
+      {
+        "name": "VAL",
+        "number": 36,
+        "chain": "A",
+        "distance": 6.481
+      },
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 6.755
+      },
+      {
+        "name": "ALA",
+        "number": 37,
+        "chain": "A",
+        "distance": 6.822
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 48,
+    "name": "PRO",
+    "letter": "P",
+    "neighbors": [
+      {
+        "name": "SER",
+        "number": 38,
+        "chain": "A",
+        "distance": 7.801
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 49,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 50,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 51,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 52,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 53,
+    "name": "TRP",
+    "letter": "W",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 54,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 55,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 56,
+    "name": "PHE",
+    "letter": "F",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 57,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 58,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 59,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 60,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 61,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 62,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 63,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 66,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 67,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 68,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 69,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 6.736
+      },
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 7.309
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 70,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": [
+      {
+        "name": "GLU",
+        "number": 60,
+        "chain": "A",
+        "distance": 7.686
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 71,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 72,
+    "name": "GLN",
+    "letter": "Q",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 5.773
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 73,
+    "name": "VAL",
+    "letter": "V",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 4.268
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 74,
+    "name": "PHE",
+    "letter": "F",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 7.218
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 75,
+    "name": "ARG",
+    "letter": "R",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 76,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 2.965
+      },
+      {
+        "name": "SER",
+        "number": 57,
+        "chain": "A",
+        "distance": 5.384
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 77,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 6.633
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 78,
+    "name": "LYS",
+    "letter": "K",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 79,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 80,
+    "name": "GLU",
+    "letter": "E",
+    "neighbors": [
+      {
+        "name": "ARG",
+        "number": 59,
+        "chain": "A",
+        "distance": 5.862
+      },
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 6.526
+      },
+      {
+        "name": "ASP",
+        "number": 54,
+        "chain": "A",
+        "distance": 6.746
+      },
+      {
+        "name": "SER",
+        "number": 57,
+        "chain": "A",
+        "distance": 6.862
+      },
+      {
+        "name": "LYS",
+        "number": 27,
+        "chain": "A",
+        "distance": 6.895
+      },
+      {
+        "name": "ILE",
+        "number": 55,
+        "chain": "A",
+        "distance": 7.058
+      },
+      {
+        "name": "SER",
+        "number": 28,
+        "chain": "A",
+        "distance": 7.463
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 81,
+    "name": "GLY",
+    "letter": "G",
+    "neighbors": [
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 7.311
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 82,
+    "name": "ALA",
+    "letter": "A",
+    "neighbors": [
+      {
+        "name": "GLN",
+        "number": 31,
+        "chain": "A",
+        "distance": 7.066
+      }
+    ]
+  },
+  {
+    "chain": "D",
+    "number": 83,
+    "name": "ASP",
+    "letter": "D",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 84,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 85,
+    "name": "THR",
+    "letter": "T",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 86,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 87,
+    "name": "ILE",
+    "letter": "I",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 88,
+    "name": "LEU",
+    "letter": "L",
+    "neighbors": []
+  },
+  {
+    "chain": "D",
+    "number": 89,
+    "name": "SER",
+    "letter": "S",
+    "neighbors": []
+  }
+]

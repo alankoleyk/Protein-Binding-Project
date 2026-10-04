@@ -1,6 +1,8 @@
 # ProteinBinding
 
-This is an early project skeleton. Most modules are still placeholders. The current entry point only checks that the required Python packages can be imported and shows a confirmation dialog.
+An early desktop GUI for our protein-binding project, built with PySide6, Qt Widgets, and 3Dmol.js. It currently runs with a small demo adapter so we can develop the GUI before the scientific backend is ready.
+
+The layout puts the 3D structure and residue sequence on the left, and interface settings, mutation selection, demo predictions, and nearby residues on the right.
 
 ## Set up the environment
 
@@ -20,15 +22,17 @@ Activate it before running the project:
 micromamba activate ProteinBinding
 ```
 
-When adding a package, apply changes to an existing environment with:
+When adding a package, add it to `environment.yml` and commit that change. Teammates can then update their existing environment with:
 
 ```bash
 micromamba env update -n ProteinBinding -f environment.yml
 ```
 
-## Download the 3D viewer library
+## Download the local resources
 
-The `resources/` directories are excluded from Git, so download this library after cloning. This command creates the target directory and downloads a fixed version of 3Dmol.js:
+The `resources/` directories are excluded from Git. Run both commands after cloning; they create the target directories automatically.
+
+Download the pinned 3Dmol.js library:
 
 ```bash
 curl --fail --location --create-dirs \
@@ -36,7 +40,15 @@ curl --fail --location --create-dirs \
   --output src/resources/vendor/3Dmol.min.js
 ```
 
-The library will be used by the future molecular viewer. It is not needed by the current environment-check dialog. See the [3Dmol.js documentation](https://3dmol.org/doc/) for its API and license information.
+Download the demo structure, [RCSB 1BRS](https://www.rcsb.org/structure/1BRS):
+
+```bash
+curl --fail --location --create-dirs \
+  'https://files.rcsb.org/download/1BRS.pdb' \
+  --output src/resources/demo/1brs.pdb
+```
+
+These files are required to launch the GUI. Once downloaded, the viewer runs locally without a server or an internet connection. 
 
 ## Run
 
@@ -46,40 +58,55 @@ With the `ProteinBinding` environment active, run:
 python src/__main__.py
 ```
 
-If the imports succeed, a dialog displays **“Environment OK!”**. It checks Qt Widgets, WebEngine, WebChannel, and the scientific Python dependencies. This does not yet test actual 3D rendering.
-
 ## Project structure
 
-The comments below describe the intended responsibilities of the placeholder modules.
+The main files and their responsibilities:
 
 ```text
 .
 ├── environment.yml             # Primary environment and dependency definition
+├── pyproject.toml              # Ruff configuration
 ├── README.md
 ├── reference/
 │   └── hras_project/           # Alan's existing example code and structure data
 │       ├── 4EFL.cif
 │       └── pdb_parser.py
 ├── src/
-│   ├── __main__.py             # Entry point; currently an environment check
+│   ├── __main__.py             # Entry point and wiring of concrete implementations
 │   ├── contracts.py            # GUI-facing data types and interfaces
 │   ├── presenter.py            # User actions, application state, and workflow
 │   ├── view.py                 # Qt window and standard widgets
 │   ├── viewer.py               # Molecular viewer and Python–JavaScript bridge
 │   ├── tasks.py                # Background task execution
+│   ├── style.qss               # Qt colors, typography, and widget styles
+│   ├── icons/                  # Small, tracked GUI assets
+│   ├── viewer_web/
+│   │   ├── index.html          # Local page inside QWebEngineView
+│   │   └── viewer.js           # 3Dmol rendering and selection events
 │   ├── adapters/
 │   │   ├── __init__.py
-│   │   └── demo.py             # Planned temporary backend for GUI development
+│   │   ├── demo.py             # Temporary backend with fixed prediction fixtures
+│   │   └── demo_residues.json  # Precomputed geometry for the single demo structure
 │   ├── backend/               # Backend implementation goes here
 │   └── resources/
+│       ├── demo/
+│       │   └── 1brs.pdb        # Downloaded locally; excluded from Git
 │       └── vendor/
 │           └── 3Dmol.min.js    # Downloaded locally; excluded from Git
 └── tests/
-    ├── functional/            # Tests of complete workflows
-    └── unit/                  # Tests of individual functions and components
+    ├── functional/            # unittest: real Qt/WebEngine and worker integration
+    └── unit/                  # unittest: presenter behavior without Qt
 ```
 
-The GUI will follow a lightweight MVP structure: the **View** displays information, the **Presenter** coordinates actions, and the backend handles the scientific work. Adapters translate between the GUI's internal interfaces and the backend's API. The test directories are reserved for future tests.
+## Tests and code checks
+
+Tests use Python's standard-library **`unittest`**. The tests cover presenter behavior, GUI signal wiring, layout stability, and worker callbacks. Run commands from the project root with the environment active.
+
+Fast presenter tests, without starting Qt or downloading the viewer resources:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests/unit -v
+```
 
 ## Team to-do list
 
