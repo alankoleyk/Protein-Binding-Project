@@ -14,6 +14,7 @@ from PySide6.QtWidgets import (
     QMainWindow,
     QPushButton,
     QScrollArea,
+    QSizePolicy,
     QSlider,
     QSplitter,
     QTableWidget,
@@ -68,10 +69,32 @@ def row(*widgets):
 def card(name="card"):
     widget = QFrame()
     widget.setObjectName(name)
+    widget.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Maximum)
     layout = QVBoxLayout(widget)
     layout.setContentsMargins(12, 10, 12, 10)
     layout.setSpacing(7)
     return widget, layout
+
+
+def section_header(title, *details):
+    widget = QWidget()
+    widget.setObjectName("sectionHeader")
+    widget.setFixedHeight(26)
+    layout = QHBoxLayout(widget)
+    layout.setContentsMargins(0, 0, 0, 0)
+    layout.setSpacing(8)
+    layout.addWidget(title)
+    layout.addStretch()
+    for detail in details:
+        layout.addWidget(detail, 0, Qt.AlignmentFlag.AlignVCenter)
+    return widget
+
+
+def badge(width, text="", name="badge"):
+    widget = label(text, name)
+    widget.setFixedSize(width, 20)
+    widget.setAlignment(Qt.AlignmentFlag.AlignCenter)
+    return widget
 
 
 class SequenceGrid(QWidget):
@@ -208,6 +231,7 @@ class MainWindow(QMainWindow):
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setSpacing(8)
         structure_card, structure_layout = card()
+        structure_card.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
         structure_layout.setContentsMargins(0, 0, 0, 0)
         structure_layout.setSpacing(0)
         heading = QWidget()
@@ -215,7 +239,7 @@ class MainWindow(QMainWindow):
         heading_layout = QHBoxLayout(heading)
         heading_layout.setContentsMargins(8, 3, 8, 3)
         heading_layout.setSpacing(8)
-        self.code = label("", "pdbBadge")
+        self.code = badge(44, name="pdbBadge")
         heading_layout.addWidget(self.code)
         self.structure_title = label("", "heading")
         self.structure_description = label("", "muted")
@@ -229,6 +253,7 @@ class MainWindow(QMainWindow):
 
         controls = QWidget()
         controls.setObjectName("viewerToolbar")
+        controls.setFixedHeight(36)
         controls_layout = QHBoxLayout(controls)
         controls_layout.setContentsMargins(8, 5, 8, 5)
         controls_layout.setSpacing(4)
@@ -264,19 +289,19 @@ class MainWindow(QMainWindow):
         layout.addWidget(structure_card, 1)
 
         sequence_card, sequence_layout = card()
-        sequence_heading = QHBoxLayout()
-        sequence_heading.addWidget(label("Residue sequence", "sectionTitle"))
         self.sequence_count = label("", "muted")
-        sequence_heading.addWidget(self.sequence_count)
-        sequence_heading.addStretch()
         self.chain = QComboBox()
         self.chain.setObjectName("sequenceChain")
+        self.chain.setFixedWidth(128)
         self.chain.setAccessibleName("Sequence chain")
         self.chain.currentIndexChanged.connect(
             lambda: self.chain_changed.emit(self.chain.currentData())
         )
-        sequence_heading.addWidget(self.chain)
-        sequence_layout.addLayout(sequence_heading)
+        sequence_layout.addWidget(
+            section_header(
+                label("Residue sequence", "sectionTitle"), self.sequence_count, self.chain
+            )
+        )
         self.sequence = SequenceGrid()
         self.sequence.selected.connect(self.residue_selected)
         sequence_scroll = QScrollArea()
@@ -336,12 +361,10 @@ class MainWindow(QMainWindow):
         layout.setSpacing(8)
 
         inputs, inputs_layout = card()
-        heading = QHBoxLayout()
-        heading.addWidget(label("Interface & mutation", "sectionTitle"))
-        heading.addStretch()
-        self.interface_count = label("", "badge")
-        heading.addWidget(self.interface_count)
-        inputs_layout.addLayout(heading)
+        self.interface_count = badge(82)
+        inputs_layout.addWidget(
+            section_header(label("Interface & mutation", "sectionTitle"), self.interface_count)
+        )
         cutoff_heading = QHBoxLayout()
         cutoff_heading.addWidget(label("Contact cutoff"))
         self.cutoff = QSlider(Qt.Orientation.Horizontal)
@@ -353,6 +376,8 @@ class MainWindow(QMainWindow):
         self.cutoff.valueChanged.connect(lambda value: self.cutoff_changed.emit(value / 10))
         cutoff_heading.addWidget(self.cutoff, 1)
         self.cutoff_value = label("5.0 Å", "cutoffValue")
+        self.cutoff_value.setFixedSize(52, 24)
+        self.cutoff_value.setAlignment(Qt.AlignmentFlag.AlignCenter)
         cutoff_heading.addWidget(self.cutoff_value)
         inputs_layout.addLayout(cutoff_heading)
         self.highlight = QCheckBox("Highlight interface")
@@ -393,12 +418,10 @@ class MainWindow(QMainWindow):
         layout.addWidget(inputs)
 
         result, result_layout = card("resultCard")
-        result_heading = QHBoxLayout()
         self.prediction_title = label("Predicted ΔΔG", "muted")
-        result_heading.addWidget(self.prediction_title)
-        result_heading.addStretch()
-        result_heading.addWidget(label("DEMO", "demoBadge"))
-        result_layout.addLayout(result_heading)
+        result_layout.addWidget(
+            section_header(self.prediction_title, badge(42, "DEMO", "demoBadge"))
+        )
         self.prediction_value = label("—", "predictionValue")
         value_row = row(self.prediction_value, label("kcal/mol", "muted"))
         value_row.addStretch()
@@ -418,12 +441,10 @@ class MainWindow(QMainWindow):
         layout.addWidget(result)
 
         neighbors, neighbors_layout = card()
-        neighbors_heading = QHBoxLayout()
-        neighbors_heading.addWidget(label("Nearby partner residues", "sectionTitle"))
-        neighbors_heading.addStretch()
-        self.neighbor_count = label("", "badge")
-        neighbors_heading.addWidget(self.neighbor_count)
-        neighbors_layout.addLayout(neighbors_heading)
+        self.neighbor_count = badge(32)
+        neighbors_layout.addWidget(
+            section_header(label("Nearby partner residues", "sectionTitle"), self.neighbor_count)
+        )
         self.neighbors = QTableWidget(0, 3)
         self.neighbors.setObjectName("neighbors")
         self.neighbors.setHorizontalHeaderLabels(["Residue", "Chain", "Distance"])

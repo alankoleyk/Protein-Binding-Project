@@ -34,8 +34,8 @@ QSlider::groove:horizontal { height: 3px; background: #424242; border-radius: 1p
 QSlider::sub-page:horizontal { background: #bdbdbd; border-radius: 1px; }
 QSlider::handle:horizontal { background: #e5e5e5; border: 1px solid #666666; width: 11px; margin: -5px 0; border-radius: 6px; }
 QCheckBox { spacing: 7px; padding: 2px 0; font-size: 11px; }
-QCheckBox::indicator { width: 12px; height: 12px; border: 1px solid #666666; background: #252525; border-radius: 3px; }
-QCheckBox::indicator:checked { background: #bdbdbd; border-color: #dedede; }
+QCheckBox::indicator { width: 14px; height: 14px; border: 1px solid #888888; background: #252525; border-radius: 3px; }
+QCheckBox::indicator:checked { image: url(icons:check-x.svg); background: #e0e0e0; border-color: #eeeeee; }
 QCheckBox::indicator:hover { border-color: #dddddd; }
 QToolButton#residue { background: #252525; border: 1px solid transparent; border-radius: 3px; font-size: 10px; padding: 0; }
 QToolButton#residue[tone="muted"] { color: #999999; }
