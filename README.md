@@ -2,7 +2,7 @@
 
 An early desktop GUI for our protein-binding project, built with PySide6, Qt Widgets, and 3Dmol.js. It currently runs with a small demo adapter so we can develop the GUI before the scientific backend is ready.
 
-The single-page layout puts the 3D structure and residue sequence on the left, and interface settings, mutation selection, demo predictions, and nearby residues on the right.
+The layout puts the 3D structure and residue sequence on the left, and interface settings, mutation selection, demo predictions, and nearby residues on the right.
 
 ## Set up the environment
 
@@ -48,7 +48,7 @@ curl --fail --location --create-dirs \
   --output src/resources/demo/1brs.pdb
 ```
 
-These files are required to launch the GUI. Once downloaded, the viewer runs locally without a server or an internet connection. The optional **View in PDB** link opens the RCSB website in your browser. See the [3Dmol.js documentation](https://3dmol.org/doc/) for its API and license information.
+These files are required to launch the GUI. Once downloaded, the viewer runs locally without a server or an internet connection. 
 
 ## Run
 
@@ -57,12 +57,6 @@ With the `ProteinBinding` environment active, run:
 ```bash
 python src/__main__.py
 ```
-
-Try dragging the structure to rotate, scrolling to zoom, or clicking a residue in the 3D view or sequence. The camera buttons provide auto-rotation, zoom, focus, and reset. You can also switch chains and cartoon/stick/surface representations.
-
-Start with **chain D, residue 39 → Alanine (A)**, then click **Preview mutation effect**. Change the replacement to Asparagine (N) for another prepared example. Changing a prediction input clears the old result. Mutations without a prepared fixture show **No demo value**.
-
-The structure and precomputed inter-chain distances are real; **all predicted and experimental affinity values shown in this shell are invented**. Selecting a mutation does not alter the coordinates or model a mutant structure. There is no training or scientific inference backend yet.
 
 ## Project structure
 
@@ -104,48 +98,15 @@ The main files and their responsibilities:
     └── unit/                  # unittest: presenter behavior without Qt
 ```
 
-The GUI uses a lightweight MVP structure:
-
-- **View** (`view.py`): displays state and emits user actions. It does not import a backend or the presenter.
-- **Presenter** (`presenter.py`): manages selection, input changes, and prediction state. It uses ordinary Python data classes and protocols, with no Qt imports.
-- **Adapter** (`adapters/demo.py` for now): supplies data through the GUI-facing `BackendPort` in `contracts.py`.
-- **Viewer** (`viewer.py` + `viewer_web/`): contains the Python–JavaScript boundary. JavaScript renders molecules and reports clicks; it does not calculate affinity.
-- **Task runner** (`tasks.py`): runs predictions on a worker and delivers results on the GUI thread. Results from outdated inputs are ignored by the presenter.
-
-`__main__.py` connects these pieces. To connect a real backend later, add an adapter in `src/adapters/` that wraps the functions in `src/backend/`, then replace `DemoBackend()` at the entry point. The GUI-facing methods are currently `load_structure()`, `find_interface(structure, cutoff)`, and `predict(request)`; **these do not prescribe the backend team's API**. The real backend does not need to import Qt or these GUI contracts. The current structure loader expects a local PDB file.
-
-Loading this small demo and filtering its precomputed contacts are synchronous; predictions use the worker. When actual parsing or interface calculations become expensive, those calls can use the same task runner too.
-
 ## Tests and code checks
 
-Tests use Python's standard-library **`unittest`**; no separate test framework is required. The tests cover presenter behavior, GUI signal wiring, layout stability, and worker callbacks. Run commands from the project root with the environment active.
+Tests use Python's standard-library **`unittest`**. The tests cover presenter behavior, GUI signal wiring, layout stability, and worker callbacks. Run commands from the project root with the environment active.
 
 Fast presenter tests, without starting Qt or downloading the viewer resources:
 
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests/unit -v
 ```
-
-GUI integration tests, after downloading both resources:
-
-```bash
-PYTHONPATH=src python -m unittest discover -s tests/functional -v
-```
-
-The GUI tests briefly open real windows and require a desktop session with working WebGL. Leave those windows alone while the tests run. On macOS, use the normal display driver: Qt's offscreen driver can lose its WebGL context.
-
-```bash
-python -m ruff check src tests
-python -m ruff format --check src tests
-```
-
-## Demo data notes
-
-The demo uses chains A (barnase) and D (barstar) from 1BRS. `demo_residues.json` contains 195 resolved residues and the minimum heavy-atom distance for partner residues within 8 Å, rounded to three decimals. It was copied from the earlier `project/gpt` reference prototype, where `scripts/prepare-demo.py` generates it. The slider filters those stored distances; it is not running a new structural analysis.
-
-The barstar in 1BRS has a C40A/C82A background, so these coordinates should not be assumed to be a universal wild-type reference when matching experimental mutation data. The display uses ΔΔG = ΔG(mutant) − ΔG(reference), with positive values meaning weaker binding.
-
-Structure credit: Buckle, Schreiber & Fersht (1994), [RCSB 1BRS](https://www.rcsb.org/structure/1BRS). The GUI shell was developed with Codex assistance; scientific backend implementation and validation remain team work.
 
 ## Team to-do list
 
