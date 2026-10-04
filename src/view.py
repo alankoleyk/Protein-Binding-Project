@@ -59,7 +59,7 @@ def label(text="", name="", wrap=False):
 def row(*widgets):
     layout = QHBoxLayout()
     layout.setContentsMargins(0, 0, 0, 0)
-    layout.setSpacing(12)
+    layout.setSpacing(6)
     for widget in widgets:
         layout.addWidget(widget)
     return layout
@@ -69,19 +69,23 @@ def card(name="card"):
     widget = QFrame()
     widget.setObjectName(name)
     layout = QVBoxLayout(widget)
-    layout.setContentsMargins(20, 18, 20, 18)
-    layout.setSpacing(14)
+    layout.setContentsMargins(12, 10, 12, 10)
+    layout.setSpacing(7)
     return widget, layout
 
 
 class SequenceGrid(QWidget):
     selected = Signal(object)
+    height_changed = Signal(int)
+    CELL_WIDTH = 26
+    CELL_HEIGHT = 30
+    GAP = 3
 
     def __init__(self):
         super().__init__()
         self.grid = QGridLayout(self)
         self.grid.setContentsMargins(0, 0, 0, 0)
-        self.grid.setSpacing(5)
+        self.grid.setSpacing(self.GAP)
         self.grid.setSizeConstraint(QLayout.SizeConstraint.SetNoConstraint)
         self.grid.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
         self.buttons = {}
@@ -100,7 +104,7 @@ class SequenceGrid(QWidget):
                 button = QToolButton()
                 button.setObjectName("residue")
                 button.setText(f"{residue.letter}\n{residue.key.number}{residue.key.insertion}")
-                button.setFixedSize(35, 43)
+                button.setFixedSize(self.CELL_WIDTH, self.CELL_HEIGHT)
                 description = f"{AMINO_ACIDS[residue.letter]} {residue.key.number} · Chain {residue.key.chain}"
                 button.setToolTip(description)
                 button.setAccessibleName(description)
@@ -117,18 +121,20 @@ class SequenceGrid(QWidget):
                 button.style().polish(button)
 
     def _arrange(self):
-        self._columns = max(1, (self.width() + 5) // 40)
+        self._columns = max(1, (self.width() + self.GAP) // (self.CELL_WIDTH + self.GAP))
         for index, button in enumerate(self.buttons.values()):
             self.grid.addWidget(button, index // self._columns, index % self._columns)
         rows = (len(self.buttons) + self._columns - 1) // self._columns
-        self.setMinimumHeight(max(0, rows * 48 - 5))
+        height = max(0, rows * (self.CELL_HEIGHT + self.GAP) - self.GAP)
+        self.setMinimumHeight(height)
+        self.height_changed.emit(height)
 
     def minimumSizeHint(self):
         return QSize(0, self.minimumHeight())
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
-        if max(1, (self.width() + 5) // 40) != self._columns:
+        if max(1, (self.width() + self.GAP) // (self.CELL_WIDTH + self.GAP)) != self._columns:
             self._arrange()
 
 
@@ -136,28 +142,28 @@ class AffinityScale(QWidget):
     def __init__(self):
         super().__init__()
         self.value = None
-        self.setFixedHeight(38)
+        self.setFixedHeight(30)
         self.setAccessibleName("Binding change scale, minus four to plus four kcal per mole")
 
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         gradient = QLinearGradient(0, 0, self.width(), 0)
-        gradient.setColorAt(0, QColor("#62d7bf"))
-        gradient.setColorAt(0.5, QColor("#607180"))
-        gradient.setColorAt(1, QColor("#f2c477"))
+        gradient.setColorAt(0, QColor("#858585"))
+        gradient.setColorAt(0.5, QColor("#454545"))
+        gradient.setColorAt(1, QColor("#c7c7c7"))
         painter.setPen(Qt.PenStyle.NoPen)
         painter.setBrush(gradient)
-        painter.drawRoundedRect(0, 7, self.width(), 5, 2, 2)
+        painter.drawRoundedRect(0, 5, self.width(), 4, 2, 2)
         if self.value is not None:
             x = round((min(4, max(-4, self.value)) + 4) / 8 * (self.width() - 4)) + 2
-            painter.setPen(QPen(QColor("#f5f0e6"), 2))
-            painter.drawLine(x, 3, x, 16)
-        painter.setPen(QColor("#8293a6"))
-        painter.drawText(0, 33, "Stronger −4")
-        painter.drawText(self.width() // 2 - 4, 33, "0")
+            painter.setPen(QPen(QColor("#eeeeee"), 2))
+            painter.drawLine(x, 2, x, 12)
+        painter.setPen(QColor("#989898"))
+        painter.drawText(0, 27, "Stronger −4")
+        painter.drawText(self.width() // 2 - 4, 27, "0")
         text = "+4 Weaker"
-        painter.drawText(self.width() - painter.fontMetrics().horizontalAdvance(text), 33, text)
+        painter.drawText(self.width() - painter.fontMetrics().horizontalAdvance(text), 27, text)
 
 
 class MainWindow(QMainWindow):
@@ -175,38 +181,22 @@ class MainWindow(QMainWindow):
         self._structure = None
         self._original = None
         self.setWindowTitle("ProteinBinding")
-        self.resize(1380, 920)
+        self.resize(1280, 800)
         self.setMinimumSize(1040, 720)
         root = QWidget()
         root.setObjectName("workspace")
         self.setCentralWidget(root)
         layout = QVBoxLayout(root)
-        layout.setContentsMargins(24, 20, 24, 16)
-        layout.setSpacing(18)
-
-        header = QHBoxLayout()
-        header.addWidget(label("◈", "brandMark"))
-        brand = QVBoxLayout()
-        brand.setSpacing(3)
-        brand.addWidget(label("ProteinBinding", "brand"))
-        brand.addWidget(label("STRUCTURE → INTERFACE → MUTATION", "eyebrow"))
-        header.addLayout(brand)
-        header.addStretch()
-        header.addWidget(label("●  LOCAL DEMO", "badge"))
-        layout.addLayout(header)
+        layout.setContentsMargins(8, 8, 8, 8)
+        layout.setSpacing(0)
 
         splitter = QSplitter(Qt.Orientation.Horizontal)
         splitter.setChildrenCollapsible(False)
-        splitter.setHandleWidth(18)
+        splitter.setHandleWidth(8)
         splitter.addWidget(self._build_left())
         splitter.addWidget(self._build_right())
-        splitter.setSizes([930, 380])
+        splitter.setSizes([920, 330])
         layout.addWidget(splitter, 1)
-        footer = QHBoxLayout()
-        footer.addWidget(label("Known structure. One substitution at a time.", "muted"))
-        footer.addStretch()
-        footer.addWidget(label("Real structure · Illustrative predictions", "muted"))
-        layout.addLayout(footer)
 
         viewer.residue_selected.connect(self.residue_selected)
         viewer.ready.connect(self._viewer_ready)
@@ -216,24 +206,22 @@ class MainWindow(QMainWindow):
         left = QWidget()
         layout = QVBoxLayout(left)
         layout.setContentsMargins(0, 0, 0, 0)
-        layout.setSpacing(16)
+        layout.setSpacing(8)
         structure_card, structure_layout = card()
         structure_layout.setContentsMargins(0, 0, 0, 0)
         structure_layout.setSpacing(0)
         heading = QWidget()
+        heading.setFixedHeight(32)
         heading_layout = QHBoxLayout(heading)
-        heading_layout.setContentsMargins(20, 17, 20, 17)
-        heading_layout.setSpacing(14)
+        heading_layout.setContentsMargins(8, 3, 8, 3)
+        heading_layout.setSpacing(8)
         self.code = label("", "pdbBadge")
         heading_layout.addWidget(self.code)
-        title = QVBoxLayout()
-        title.setSpacing(5)
         self.structure_title = label("", "heading")
         self.structure_description = label("", "muted")
-        title.addWidget(self.structure_title)
-        title.addWidget(self.structure_description)
-        heading_layout.addLayout(title, 1)
-        self.pdb_link = label()
+        heading_layout.addWidget(self.structure_title)
+        heading_layout.addWidget(self.structure_description, 1)
+        self.pdb_link = label("", "muted")
         self.pdb_link.setOpenExternalLinks(True)
         heading_layout.addWidget(self.pdb_link)
         structure_layout.addWidget(heading)
@@ -242,7 +230,8 @@ class MainWindow(QMainWindow):
         controls = QWidget()
         controls.setObjectName("viewerToolbar")
         controls_layout = QHBoxLayout(controls)
-        controls_layout.setContentsMargins(20, 8, 20, 16)
+        controls_layout.setContentsMargins(8, 5, 8, 5)
+        controls_layout.setSpacing(4)
         self.camera_buttons = []
         self.spin_button = self._camera_button("▶", "Auto rotate", "spin")
         self.spin_button.setCheckable(True)
@@ -254,32 +243,31 @@ class MainWindow(QMainWindow):
             ("↺", "Reset camera", "reset"),
         ):
             controls_layout.addWidget(self._camera_button(text, hint, command))
+        controls_layout.addSpacing(8)
+        self.legend = label("", "muted")
+        controls_layout.addWidget(self.legend)
         controls_layout.addStretch()
         self.viewer_status = label("Loading 3D…", "muted")
         controls_layout.addWidget(self.viewer_status)
-        structure_layout.addWidget(controls)
-
-        bottom = QWidget()
-        bottom_layout = QHBoxLayout(bottom)
-        bottom_layout.setContentsMargins(20, 13, 20, 13)
-        self.legend = label()
-        bottom_layout.addWidget(self.legend)
-        bottom_layout.addStretch()
         self.representation = QComboBox()
         self.representation.setObjectName("representation")
+        self.representation.setFixedWidth(94)
         self.representation.setAccessibleName("Molecular representation")
         for text in ("Cartoon", "Sticks", "Surface"):
             self.representation.addItem(text, text.lower())
         self.representation.currentIndexChanged.connect(
             lambda: self.representation_changed.emit(self.representation.currentData())
         )
-        bottom_layout.addWidget(self.representation)
-        structure_layout.addWidget(bottom)
+        controls_layout.addWidget(self.representation)
+        controls.setToolTip("Drag to rotate · Scroll to zoom · Click a residue to select")
+        structure_layout.addWidget(controls)
         layout.addWidget(structure_card, 1)
 
         sequence_card, sequence_layout = card()
         sequence_heading = QHBoxLayout()
         sequence_heading.addWidget(label("Residue sequence", "sectionTitle"))
+        self.sequence_count = label("", "muted")
+        sequence_heading.addWidget(self.sequence_count)
         sequence_heading.addStretch()
         self.chain = QComboBox()
         self.chain.setObjectName("sequenceChain")
@@ -295,15 +283,12 @@ class MainWindow(QMainWindow):
         sequence_scroll.setWidgetResizable(True)
         sequence_scroll.setFrameShape(QFrame.Shape.NoFrame)
         sequence_scroll.setWidget(self.sequence)
-        sequence_scroll.setMinimumHeight(100)
-        sequence_scroll.setMaximumHeight(150)
+        sequence_scroll.setFixedHeight(96)
+        self.sequence.height_changed.connect(
+            lambda height: sequence_scroll.setFixedHeight(min(height, 132))
+        )
+        sequence_scroll.setToolTip("Colored residues meet the interface cutoff")
         sequence_layout.addWidget(sequence_scroll)
-        sequence_footer = QHBoxLayout()
-        sequence_footer.addWidget(label("Colored residues meet the interface cutoff", "muted"))
-        sequence_footer.addStretch()
-        self.sequence_count = label("", "muted")
-        sequence_footer.addWidget(self.sequence_count)
-        sequence_layout.addLayout(sequence_footer)
         layout.addWidget(sequence_card)
         return left
 
@@ -312,7 +297,7 @@ class MainWindow(QMainWindow):
         button.setObjectName("cameraButton")
         button.setToolTip(hint)
         button.setAccessibleName(hint)
-        button.setFixedSize(34, 32)
+        button.setFixedSize(26, 24)
         button.setEnabled(False)
         button.clicked.connect(lambda checked=False: self._camera(command, checked))
         self.camera_buttons.append(button)
@@ -328,26 +313,27 @@ class MainWindow(QMainWindow):
         self.viewer.command(command)
 
     def _viewer_ready(self):
-        self.viewer_status.setText("Drag to rotate · Scroll to zoom")
+        self.viewer_status.hide()
         for button in self.camera_buttons:
             button.setEnabled(True)
 
     def _viewer_failed(self, message):
         self.viewer_status.setText("3D unavailable")
         self.viewer_status.setToolTip(message)
+        self.viewer_status.show()
 
     def _build_right(self):
         scroll = QScrollArea()
         scroll.setObjectName("predictionSidebar")
         scroll.setWidgetResizable(True)
         scroll.setFrameShape(QFrame.Shape.NoFrame)
-        scroll.setMinimumWidth(345)
-        scroll.setMaximumWidth(475)
+        scroll.setMinimumWidth(310)
+        scroll.setMaximumWidth(390)
         content = QWidget()
         scroll.setWidget(content)
         layout = QVBoxLayout(content)
-        layout.setContentsMargins(0, 0, 3, 0)
-        layout.setSpacing(16)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(8)
 
         inputs, inputs_layout = card()
         heading = QHBoxLayout()
@@ -356,25 +342,19 @@ class MainWindow(QMainWindow):
         self.interface_count = label("", "badge")
         heading.addWidget(self.interface_count)
         inputs_layout.addLayout(heading)
-        inputs_layout.addSpacing(5)
         cutoff_heading = QHBoxLayout()
         cutoff_heading.addWidget(label("Contact cutoff"))
-        cutoff_heading.addStretch()
-        self.cutoff_value = label("5.0 Å", "cutoffValue")
-        cutoff_heading.addWidget(self.cutoff_value)
-        inputs_layout.addLayout(cutoff_heading)
         self.cutoff = QSlider(Qt.Orientation.Horizontal)
         self.cutoff.setObjectName("cutoff")
         self.cutoff.setAccessibleName("Contact cutoff in tenths of an angstrom")
         self.cutoff.setRange(30, 80)
         self.cutoff.setValue(50)
+        self.cutoff.setToolTip("Contact cutoff: 3 Å (close contacts) to 8 Å (broader shell)")
         self.cutoff.valueChanged.connect(lambda value: self.cutoff_changed.emit(value / 10))
-        inputs_layout.addWidget(self.cutoff)
-        cutoff_labels = QHBoxLayout()
-        cutoff_labels.addWidget(label("3 Å · close contacts", "muted"))
-        cutoff_labels.addStretch()
-        cutoff_labels.addWidget(label("8 Å · broader shell", "muted"))
-        inputs_layout.addLayout(cutoff_labels)
+        cutoff_heading.addWidget(self.cutoff, 1)
+        self.cutoff_value = label("5.0 Å", "cutoffValue")
+        cutoff_heading.addWidget(self.cutoff_value)
+        inputs_layout.addLayout(cutoff_heading)
         self.highlight = QCheckBox("Highlight interface")
         self.highlight.setObjectName("highlightInterface")
         self.highlight.setChecked(True)
@@ -384,39 +364,32 @@ class MainWindow(QMainWindow):
         divider.setObjectName("divider")
         divider.setFixedHeight(1)
         inputs_layout.addWidget(divider)
-        inputs_layout.addWidget(label("SELECTED RESIDUE", "eyebrow"))
         self.residue_badge = label("", "residueBadge")
-        self.residue_badge.setFixedSize(56, 60)
+        self.residue_badge.setFixedSize(36, 38)
         self.residue_badge.setAlignment(Qt.AlignmentFlag.AlignCenter)
         selection_layout = QHBoxLayout()
-        selection_layout.setSpacing(14)
+        selection_layout.setSpacing(8)
         selection_layout.addWidget(self.residue_badge)
         description = QVBoxLayout()
-        description.setSpacing(6)
+        description.setSpacing(2)
         self.residue_name = label("", "sectionTitle")
         self.residue_details = label("", "muted")
         description.addWidget(self.residue_name)
         description.addWidget(self.residue_details)
         selection_layout.addLayout(description, 1)
         inputs_layout.addLayout(selection_layout)
-        inputs_layout.addWidget(label("Substitute with", "muted"))
         self.replacement = QComboBox()
         self.replacement.setObjectName("replacement")
         self.replacement.setAccessibleName("Replacement amino acid")
         self.replacement.currentIndexChanged.connect(
             lambda: self.replacement_changed.emit(self.replacement.currentData())
         )
-        inputs_layout.addWidget(self.replacement)
+        inputs_layout.addLayout(row(label("Replace with", "muted"), self.replacement))
         self.predict_button = QPushButton("Preview mutation effect  →")
         self.predict_button.setObjectName("predictButton")
-        self.predict_button.setMinimumHeight(44)
+        self.predict_button.setMinimumHeight(28)
         self.predict_button.clicked.connect(self.prediction_requested)
         inputs_layout.addWidget(self.predict_button)
-        inputs_layout.addWidget(
-            label(
-                "Loads a fixed demo result. No prediction model is connected.", "muted", wrap=True
-            )
-        )
         layout.addWidget(inputs)
 
         result, result_layout = card("resultCard")
@@ -429,9 +402,9 @@ class MainWindow(QMainWindow):
         self.prediction_value = label("—", "predictionValue")
         value_row = row(self.prediction_value, label("kcal/mol", "muted"))
         value_row.addStretch()
-        result_layout.addLayout(value_row)
         self.prediction_direction = label("Ready to preview", "predictionDirection")
-        result_layout.addWidget(self.prediction_direction)
+        value_row.addWidget(self.prediction_direction)
+        result_layout.addLayout(value_row)
         self.scale = AffinityScale()
         result_layout.addWidget(self.scale)
         experiment_row = QHBoxLayout()
@@ -440,9 +413,7 @@ class MainWindow(QMainWindow):
         self.experimental_value = label("—", "experimentalValue")
         experiment_row.addWidget(self.experimental_value)
         result_layout.addLayout(experiment_row)
-        self.prediction_note = label(
-            "Both values are invented for this prototype.", "muted", wrap=True
-        )
+        self.prediction_note = label("Illustrative values · No model connected", "muted", wrap=True)
         result_layout.addWidget(self.prediction_note)
         layout.addWidget(result)
 
@@ -468,10 +439,9 @@ class MainWindow(QMainWindow):
         self.neighbors.horizontalHeader().setSectionResizeMode(
             2, QHeaderView.ResizeMode.ResizeToContents
         )
-        self.neighbors.setMinimumHeight(120)
         self.neighbors.cellClicked.connect(self._select_neighbor)
         neighbors_layout.addWidget(self.neighbors)
-        neighbors_layout.addWidget(label("Click a row to inspect its residue.", "muted"))
+        self.neighbors.setToolTip("Click a row to inspect its residue")
         layout.addWidget(neighbors)
         layout.addStretch()
         return scroll
@@ -487,7 +457,7 @@ class MainWindow(QMainWindow):
             self.structure_title.setText(state.structure.title)
             self.structure_description.setText(state.structure.description)
             self.pdb_link.setText(
-                f'<a style="color:#91a2b5;text-decoration:none" '
+                f'<a style="color:#ababab;text-decoration:none" '
                 f'href="https://www.rcsb.org/structure/{state.structure.code}">View in PDB ↗</a>'
             )
             self.legend.setText(
@@ -535,7 +505,7 @@ class MainWindow(QMainWindow):
             r for r in state.structure.residues if r.key.chain == state.sequence_chain
         )
         self.sequence.show_residues(chain_residues, state.interface, state.selected)
-        self.sequence_count.setText(f"{len(chain_residues)} resolved residues")
+        self.sequence_count.setText(f"{len(chain_residues)} residues")
         self.viewer.show_state(state)
         self.predict_button.setEnabled(not state.busy)
         self.predict_button.setText(
@@ -554,8 +524,12 @@ class MainWindow(QMainWindow):
             distance = QTableWidgetItem(f"{neighbor.distance:.2f} Å")
             distance.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
             self.neighbors.setItem(index, 2, distance)
-            self.neighbors.setRowHeight(index, 32)
-        self.neighbors.setFixedHeight(34 + max(2, min(6, len(neighbors))) * 32)
+            self.neighbors.setRowHeight(index, 23)
+        self.neighbors.ensurePolished()
+        header_height = self.neighbors.horizontalHeader().sizeHint().height()
+        self.neighbors.setFixedHeight(
+            header_height + 2 * self.neighbors.frameWidth() + max(2, min(8, len(neighbors))) * 23
+        )
 
     def _show_prediction(self, state):
         result = state.prediction
@@ -571,9 +545,9 @@ class MainWindow(QMainWindow):
         if state.error:
             direction, note = "Preview failed", state.error
         elif state.busy:
-            direction, note = "Loading preview…", "You can keep exploring the structure."
+            direction, note = "Loading preview…", "Illustrative values · No model connected"
         elif result is None:
-            direction, note = "Ready to preview", "Both values are invented for this prototype."
+            direction, note = "Ready to preview", "Illustrative values · No model connected"
         elif value is None:
             direction, note = "No demo value", "Try D39 → A or N for a prepared example."
         else:
@@ -584,6 +558,6 @@ class MainWindow(QMainWindow):
                 if value < 0
                 else "No change"
             )
-            note = "Fixed illustrative values; no prediction model is connected."
+            note = "Illustrative values · No model connected"
         self.prediction_direction.setText(direction)
         self.prediction_note.setText(note)

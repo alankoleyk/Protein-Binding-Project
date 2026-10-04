@@ -6,21 +6,16 @@
   <title>ProteinBinding molecule viewer</title>
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; background: #000; }
-    body { color: #8193a8; font: 12px -apple-system, BlinkMacSystemFont, sans-serif; }
+    body { color: #999; font: 11px -apple-system, BlinkMacSystemFont, sans-serif; }
     #molecule { position: absolute; inset: 0; background: #000; }
-    .caption { position: absolute; top: 22px; left: 24px; pointer-events: none; }
-    .caption small { display: block; font-size: 10px; font-weight: 600; letter-spacing: 2px; margin-bottom: 8px; }
-    #complex { color: #a9bacb; font: 12px ui-monospace, monospace; }
-    #status { position: absolute; top: 23px; right: 24px; pointer-events: none; }
-    #status::before { content: '●'; color: #62d7bf; margin-right: 8px; }
+    #complex { position: absolute; top: 8px; left: 10px; pointer-events: none; color: #999; font: 10px ui-monospace, monospace; }
     #error { position: absolute; inset: 0; display: grid; place-content: center; padding: 48px; color: #efbf79; text-align: center; }
     #error[hidden] { display: none; }
   </style>
 </head>
 <body>
   <div id="molecule" aria-label="Protein complex. Drag to rotate, scroll to zoom, click a residue to select it."></div>
-  <div class="caption"><small>BOUND COMPLEX</small><span id="complex">Loading structure</span></div>
-  <div id="status">Loading 3D viewer</div>
+  <div id="complex">Loading structure</div>
   <div id="error" hidden></div>
   <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
   <script src="../resources/vendor/3Dmol.min.js"></script>

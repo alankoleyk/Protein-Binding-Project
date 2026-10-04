@@ -11,7 +11,6 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
     const error = document.getElementById('error');
     error.textContent = message;
     error.hidden = false;
-    document.getElementById('status').textContent = 'Viewer unavailable';
     bridge.load_failed(message);
   }
 
@@ -39,7 +38,6 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
     viewer.render();
     originalCamera = viewer.getView();
     document.getElementById('complex').textContent = `${scene.code}  /  ${[...chainIds].join(' + ')}`;
-    document.getElementById('status').textContent = 'Interactive 3D';
     bridge.scene_loaded();
   }
 
@@ -70,8 +68,8 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
     });
     const atom = viewer.selectedAtoms(selection)[0];
     viewer.addLabel(`${atom.resn} ${selected.number}${selected.insertion} · ${selected.chain}`, {
-      backgroundColor: '#202834', backgroundOpacity: 0.95,
-      fontColor: '#f2c477', fontSize: 12, borderColor: '#716044', borderThickness: 1,
+      backgroundColor: '#242424', backgroundOpacity: 0.95,
+      fontColor: '#dec491', fontSize: 11, borderColor: '#685c43', borderThickness: 1,
       inFront: true,
     }, selection);
     viewer.render();
