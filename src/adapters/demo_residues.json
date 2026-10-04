@@ -1,6 +1,5 @@
 [
   {
-    "key": "A:3",
     "chain": "A",
     "number": 3,
     "name": "VAL",
@@ -8,7 +7,6 @@
     "neighbors": []
   },
   {
-    "key": "A:4",
     "chain": "A",
     "number": 4,
     "name": "ILE",
@@ -16,7 +14,6 @@
     "neighbors": []
   },
   {
-    "key": "A:5",
     "chain": "A",
     "number": 5,
     "name": "ASN",
@@ -24,7 +21,6 @@
     "neighbors": []
   },
   {
-    "key": "A:6",
     "chain": "A",
     "number": 6,
     "name": "THR",
@@ -32,7 +28,6 @@
     "neighbors": []
   },
   {
-    "key": "A:7",
     "chain": "A",
     "number": 7,
     "name": "PHE",
@@ -40,7 +35,6 @@
     "neighbors": []
   },
   {
-    "key": "A:8",
     "chain": "A",
     "number": 8,
     "name": "ASP",
@@ -48,7 +42,6 @@
     "neighbors": []
   },
   {
-    "key": "A:9",
     "chain": "A",
     "number": 9,
     "name": "GLY",
@@ -56,7 +49,6 @@
     "neighbors": []
   },
   {
-    "key": "A:10",
     "chain": "A",
     "number": 10,
     "name": "VAL",
@@ -64,7 +56,6 @@
     "neighbors": []
   },
   {
-    "key": "A:11",
     "chain": "A",
     "number": 11,
     "name": "ALA",
@@ -72,7 +63,6 @@
     "neighbors": []
   },
   {
-    "key": "A:12",
     "chain": "A",
     "number": 12,
     "name": "ASP",
@@ -80,7 +70,6 @@
     "neighbors": []
   },
   {
-    "key": "A:13",
     "chain": "A",
     "number": 13,
     "name": "TYR",
@@ -88,7 +77,6 @@
     "neighbors": []
   },
   {
-    "key": "A:14",
     "chain": "A",
     "number": 14,
     "name": "LEU",
@@ -96,7 +84,6 @@
     "neighbors": []
   },
   {
-    "key": "A:15",
     "chain": "A",
     "number": 15,
     "name": "GLN",
@@ -104,7 +91,6 @@
     "neighbors": []
   },
   {
-    "key": "A:16",
     "chain": "A",
     "number": 16,
     "name": "THR",
@@ -112,7 +98,6 @@
     "neighbors": []
   },
   {
-    "key": "A:17",
     "chain": "A",
     "number": 17,
     "name": "TYR",
@@ -120,7 +105,6 @@
     "neighbors": []
   },
   {
-    "key": "A:18",
     "chain": "A",
     "number": 18,
     "name": "HIS",
@@ -128,7 +112,6 @@
     "neighbors": []
   },
   {
-    "key": "A:19",
     "chain": "A",
     "number": 19,
     "name": "LYS",
@@ -136,7 +119,6 @@
     "neighbors": []
   },
   {
-    "key": "A:20",
     "chain": "A",
     "number": 20,
     "name": "LEU",
@@ -144,7 +126,6 @@
     "neighbors": []
   },
   {
-    "key": "A:21",
     "chain": "A",
     "number": 21,
     "name": "PRO",
@@ -152,7 +133,6 @@
     "neighbors": []
   },
   {
-    "key": "A:22",
     "chain": "A",
     "number": 22,
     "name": "ASP",
@@ -160,7 +140,6 @@
     "neighbors": []
   },
   {
-    "key": "A:23",
     "chain": "A",
     "number": 23,
     "name": "ASN",
@@ -168,7 +147,6 @@
     "neighbors": []
   },
   {
-    "key": "A:24",
     "chain": "A",
     "number": 24,
     "name": "TYR",
@@ -176,7 +154,6 @@
     "neighbors": []
   },
   {
-    "key": "A:25",
     "chain": "A",
     "number": 25,
     "name": "ILE",
@@ -184,7 +161,6 @@
     "neighbors": []
   },
   {
-    "key": "A:26",
     "chain": "A",
     "number": 26,
     "name": "THR",
@@ -192,70 +168,60 @@
     "neighbors": []
   },
   {
-    "key": "A:27",
     "chain": "A",
     "number": 27,
     "name": "LYS",
     "letter": "K",
     "neighbors": [
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 2.949
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 3.801
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 4.553
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 5.107
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 6.848
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
         "distance": 6.895
       },
       {
-        "key": "D:41",
         "name": "LEU",
         "number": 41,
         "chain": "D",
         "distance": 7.183
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 7.323
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
@@ -264,21 +230,18 @@
     ]
   },
   {
-    "key": "A:28",
     "chain": "A",
     "number": 28,
     "name": "SER",
     "letter": "S",
     "neighbors": [
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 7.342
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
@@ -287,7 +250,6 @@
     ]
   },
   {
-    "key": "A:29",
     "chain": "A",
     "number": 29,
     "name": "GLU",
@@ -295,7 +257,6 @@
     "neighbors": []
   },
   {
-    "key": "A:30",
     "chain": "A",
     "number": 30,
     "name": "ALA",
@@ -303,56 +264,48 @@
     "neighbors": []
   },
   {
-    "key": "A:31",
     "chain": "A",
     "number": 31,
     "name": "GLN",
     "letter": "Q",
     "neighbors": [
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 5.469
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
         "distance": 6.526
       },
       {
-        "key": "D:47",
         "name": "TYR",
         "number": 47,
         "chain": "D",
         "distance": 6.755
       },
       {
-        "key": "D:82",
         "name": "ALA",
         "number": 82,
         "chain": "D",
         "distance": 7.066
       },
       {
-        "key": "D:81",
         "name": "GLY",
         "number": 81,
         "chain": "D",
         "distance": 7.311
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 7.403
       },
       {
-        "key": "D:41",
         "name": "LEU",
         "number": 41,
         "chain": "D",
@@ -361,7 +314,6 @@
     ]
   },
   {
-    "key": "A:32",
     "chain": "A",
     "number": 32,
     "name": "ALA",
@@ -369,7 +321,6 @@
     "neighbors": []
   },
   {
-    "key": "A:33",
     "chain": "A",
     "number": 33,
     "name": "LEU",
@@ -377,7 +328,6 @@
     "neighbors": []
   },
   {
-    "key": "A:34",
     "chain": "A",
     "number": 34,
     "name": "GLY",
@@ -385,42 +335,36 @@
     "neighbors": []
   },
   {
-    "key": "A:35",
     "chain": "A",
     "number": 35,
     "name": "TRP",
     "letter": "W",
     "neighbors": [
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 3.911
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 4.021
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 5.571
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 6.972
       },
       {
-        "key": "D:41",
         "name": "LEU",
         "number": 41,
         "chain": "D",
@@ -429,42 +373,36 @@
     ]
   },
   {
-    "key": "A:36",
     "chain": "A",
     "number": 36,
     "name": "VAL",
     "letter": "V",
     "neighbors": [
       {
-        "key": "D:45",
         "name": "VAL",
         "number": 45,
         "chain": "D",
         "distance": 6.439
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 6.463
       },
       {
-        "key": "D:47",
         "name": "TYR",
         "number": 47,
         "chain": "D",
         "distance": 6.481
       },
       {
-        "key": "D:46",
         "name": "GLU",
         "number": 46,
         "chain": "D",
         "distance": 6.591
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
@@ -473,70 +411,60 @@
     ]
   },
   {
-    "key": "A:37",
     "chain": "A",
     "number": 37,
     "name": "ALA",
     "letter": "A",
     "neighbors": [
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 3.421
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 3.424
       },
       {
-        "key": "D:45",
         "name": "VAL",
         "number": 45,
         "chain": "D",
         "distance": 4.688
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 5.105
       },
       {
-        "key": "D:46",
         "name": "GLU",
         "number": 46,
         "chain": "D",
         "distance": 6.281
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 6.286
       },
       {
-        "key": "D:41",
         "name": "LEU",
         "number": 41,
         "chain": "D",
         "distance": 6.595
       },
       {
-        "key": "D:47",
         "name": "TYR",
         "number": 47,
         "chain": "D",
         "distance": 6.822
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
@@ -545,56 +473,48 @@
     ]
   },
   {
-    "key": "A:38",
     "chain": "A",
     "number": 38,
     "name": "SER",
     "letter": "S",
     "neighbors": [
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 3.499
       },
       {
-        "key": "D:46",
         "name": "GLU",
         "number": 46,
         "chain": "D",
         "distance": 3.722
       },
       {
-        "key": "D:45",
         "name": "VAL",
         "number": 45,
         "chain": "D",
         "distance": 4.314
       },
       {
-        "key": "D:47",
         "name": "TYR",
         "number": 47,
         "chain": "D",
         "distance": 4.868
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 5.957
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 7.759
       },
       {
-        "key": "D:48",
         "name": "PRO",
         "number": 48,
         "chain": "D",
@@ -603,28 +523,24 @@
     ]
   },
   {
-    "key": "A:39",
     "chain": "A",
     "number": 39,
     "name": "LYS",
     "letter": "K",
     "neighbors": [
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 5.872
       },
       {
-        "key": "D:45",
         "name": "VAL",
         "number": 45,
         "chain": "D",
         "distance": 6.95
       },
       {
-        "key": "D:46",
         "name": "GLU",
         "number": 46,
         "chain": "D",
@@ -633,21 +549,18 @@
     ]
   },
   {
-    "key": "A:40",
     "chain": "A",
     "number": 40,
     "name": "GLY",
     "letter": "G",
     "neighbors": [
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 6.888
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
@@ -656,7 +569,6 @@
     ]
   },
   {
-    "key": "A:41",
     "chain": "A",
     "number": 41,
     "name": "ASN",
@@ -664,7 +576,6 @@
     "neighbors": []
   },
   {
-    "key": "A:42",
     "chain": "A",
     "number": 42,
     "name": "LEU",
@@ -672,7 +583,6 @@
     "neighbors": []
   },
   {
-    "key": "A:43",
     "chain": "A",
     "number": 43,
     "name": "ALA",
@@ -680,7 +590,6 @@
     "neighbors": []
   },
   {
-    "key": "A:44",
     "chain": "A",
     "number": 44,
     "name": "ASP",
@@ -688,7 +597,6 @@
     "neighbors": []
   },
   {
-    "key": "A:45",
     "chain": "A",
     "number": 45,
     "name": "VAL",
@@ -696,7 +604,6 @@
     "neighbors": []
   },
   {
-    "key": "A:46",
     "chain": "A",
     "number": 46,
     "name": "ALA",
@@ -704,7 +611,6 @@
     "neighbors": []
   },
   {
-    "key": "A:47",
     "chain": "A",
     "number": 47,
     "name": "PRO",
@@ -712,7 +618,6 @@
     "neighbors": []
   },
   {
-    "key": "A:48",
     "chain": "A",
     "number": 48,
     "name": "GLY",
@@ -720,7 +625,6 @@
     "neighbors": []
   },
   {
-    "key": "A:49",
     "chain": "A",
     "number": 49,
     "name": "LYS",
@@ -728,7 +632,6 @@
     "neighbors": []
   },
   {
-    "key": "A:50",
     "chain": "A",
     "number": 50,
     "name": "SER",
@@ -736,28 +639,24 @@
     "neighbors": []
   },
   {
-    "key": "A:51",
     "chain": "A",
     "number": 51,
     "name": "ILE",
     "letter": "I",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 6.407
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 6.941
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
@@ -766,7 +665,6 @@
     ]
   },
   {
-    "key": "A:52",
     "chain": "A",
     "number": 52,
     "name": "GLY",
@@ -774,7 +672,6 @@
     "neighbors": []
   },
   {
-    "key": "A:53",
     "chain": "A",
     "number": 53,
     "name": "GLY",
@@ -782,35 +679,30 @@
     "neighbors": []
   },
   {
-    "key": "A:54",
     "chain": "A",
     "number": 54,
     "name": "ASP",
     "letter": "D",
     "neighbors": [
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 6.41
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
         "distance": 6.746
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 7.262
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
@@ -819,28 +711,24 @@
     ]
   },
   {
-    "key": "A:55",
     "chain": "A",
     "number": 55,
     "name": "ILE",
     "letter": "I",
     "neighbors": [
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 4.902
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
         "distance": 7.058
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
@@ -849,49 +737,42 @@
     ]
   },
   {
-    "key": "A:56",
     "chain": "A",
     "number": 56,
     "name": "PHE",
     "letter": "F",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 3.514
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 6.215
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 6.527
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 7.053
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 7.17
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
@@ -900,35 +781,30 @@
     ]
   },
   {
-    "key": "A:57",
     "chain": "A",
     "number": 57,
     "name": "SER",
     "letter": "S",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 4.515
       },
       {
-        "key": "D:76",
         "name": "GLU",
         "number": 76,
         "chain": "D",
         "distance": 5.384
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 5.959
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
@@ -937,28 +813,24 @@
     ]
   },
   {
-    "key": "A:58",
     "chain": "A",
     "number": 58,
     "name": "ASN",
     "letter": "N",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 3.697
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
         "distance": 7.142
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
@@ -967,112 +839,96 @@
     ]
   },
   {
-    "key": "A:59",
     "chain": "A",
     "number": 59,
     "name": "ARG",
     "letter": "R",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 2.877
       },
       {
-        "key": "D:76",
         "name": "GLU",
         "number": 76,
         "chain": "D",
         "distance": 2.965
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 3.263
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
         "distance": 3.778
       },
       {
-        "key": "D:73",
         "name": "VAL",
         "number": 73,
         "chain": "D",
         "distance": 4.268
       },
       {
-        "key": "D:72",
         "name": "GLN",
         "number": 72,
         "chain": "D",
         "distance": 5.773
       },
       {
-        "key": "D:80",
         "name": "GLU",
         "number": 80,
         "chain": "D",
         "distance": 5.862
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 6.515
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 6.517
       },
       {
-        "key": "D:77",
         "name": "ALA",
         "number": 77,
         "chain": "D",
         "distance": 6.633
       },
       {
-        "key": "D:69",
         "name": "SER",
         "number": 69,
         "chain": "D",
         "distance": 6.736
       },
       {
-        "key": "D:37",
         "name": "LEU",
         "number": 37,
         "chain": "D",
         "distance": 6.74
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 6.758
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 7.112
       },
       {
-        "key": "D:74",
         "name": "PHE",
         "number": 74,
         "chain": "D",
@@ -1081,84 +937,72 @@
     ]
   },
   {
-    "key": "A:60",
     "chain": "A",
     "number": 60,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
         "distance": 2.836
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 3.375
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 3.383
       },
       {
-        "key": "D:32",
         "name": "GLU",
         "number": 32,
         "chain": "D",
         "distance": 5.354
       },
       {
-        "key": "D:17",
         "name": "HIS",
         "number": 17,
         "chain": "D",
         "distance": 5.759
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 6.455
       },
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 7.162
       },
       {
-        "key": "D:69",
         "name": "SER",
         "number": 69,
         "chain": "D",
         "distance": 7.309
       },
       {
-        "key": "D:13",
         "name": "ILE",
         "number": 13,
         "chain": "D",
         "distance": 7.338
       },
       {
-        "key": "D:37",
         "name": "LEU",
         "number": 37,
         "chain": "D",
         "distance": 7.446
       },
       {
-        "key": "D:70",
         "name": "VAL",
         "number": 70,
         "chain": "D",
@@ -1167,21 +1011,18 @@
     ]
   },
   {
-    "key": "A:61",
     "chain": "A",
     "number": 61,
     "name": "GLY",
     "letter": "G",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 5.162
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
@@ -1190,49 +1031,42 @@
     ]
   },
   {
-    "key": "A:62",
     "chain": "A",
     "number": 62,
     "name": "LYS",
     "letter": "K",
     "neighbors": [
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 4.487
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 5.559
       },
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 6.591
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
         "distance": 6.847
       },
       {
-        "key": "D:32",
         "name": "GLU",
         "number": 32,
         "chain": "D",
         "distance": 7.017
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
@@ -1241,14 +1075,12 @@
     ]
   },
   {
-    "key": "A:63",
     "chain": "A",
     "number": 63,
     "name": "LEU",
     "letter": "L",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
@@ -1257,7 +1089,6 @@
     ]
   },
   {
-    "key": "A:64",
     "chain": "A",
     "number": 64,
     "name": "PRO",
@@ -1265,7 +1096,6 @@
     "neighbors": []
   },
   {
-    "key": "A:65",
     "chain": "A",
     "number": 65,
     "name": "GLY",
@@ -1273,7 +1103,6 @@
     "neighbors": []
   },
   {
-    "key": "A:66",
     "chain": "A",
     "number": 66,
     "name": "LYS",
@@ -1281,7 +1110,6 @@
     "neighbors": []
   },
   {
-    "key": "A:67",
     "chain": "A",
     "number": 67,
     "name": "SER",
@@ -1289,7 +1117,6 @@
     "neighbors": []
   },
   {
-    "key": "A:68",
     "chain": "A",
     "number": 68,
     "name": "GLY",
@@ -1297,7 +1124,6 @@
     "neighbors": []
   },
   {
-    "key": "A:69",
     "chain": "A",
     "number": 69,
     "name": "ARG",
@@ -1305,7 +1131,6 @@
     "neighbors": []
   },
   {
-    "key": "A:70",
     "chain": "A",
     "number": 70,
     "name": "THR",
@@ -1313,7 +1138,6 @@
     "neighbors": []
   },
   {
-    "key": "A:71",
     "chain": "A",
     "number": 71,
     "name": "TRP",
@@ -1321,7 +1145,6 @@
     "neighbors": []
   },
   {
-    "key": "A:72",
     "chain": "A",
     "number": 72,
     "name": "ARG",
@@ -1329,42 +1152,36 @@
     "neighbors": []
   },
   {
-    "key": "A:73",
     "chain": "A",
     "number": 73,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 4.486
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 4.88
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 5.896
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 6.532
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
@@ -1373,14 +1190,12 @@
     ]
   },
   {
-    "key": "A:74",
     "chain": "A",
     "number": 74,
     "name": "ALA",
     "letter": "A",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
@@ -1389,28 +1204,24 @@
     ]
   },
   {
-    "key": "A:75",
     "chain": "A",
     "number": 75,
     "name": "ASP",
     "letter": "D",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 5.202
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 7.022
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
@@ -1419,7 +1230,6 @@
     ]
   },
   {
-    "key": "A:76",
     "chain": "A",
     "number": 76,
     "name": "ILE",
@@ -1427,7 +1237,6 @@
     "neighbors": []
   },
   {
-    "key": "A:77",
     "chain": "A",
     "number": 77,
     "name": "ASN",
@@ -1435,7 +1244,6 @@
     "neighbors": []
   },
   {
-    "key": "A:78",
     "chain": "A",
     "number": 78,
     "name": "TYR",
@@ -1443,7 +1251,6 @@
     "neighbors": []
   },
   {
-    "key": "A:79",
     "chain": "A",
     "number": 79,
     "name": "THR",
@@ -1451,7 +1258,6 @@
     "neighbors": []
   },
   {
-    "key": "A:80",
     "chain": "A",
     "number": 80,
     "name": "SER",
@@ -1459,14 +1265,12 @@
     "neighbors": []
   },
   {
-    "key": "A:81",
     "chain": "A",
     "number": 81,
     "name": "GLY",
     "letter": "G",
     "neighbors": [
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
@@ -1475,42 +1279,36 @@
     ]
   },
   {
-    "key": "A:82",
     "chain": "A",
     "number": 82,
     "name": "PHE",
     "letter": "F",
     "neighbors": [
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 3.607
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 5.687
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 6.706
       },
       {
-        "key": "D:27",
         "name": "PRO",
         "number": 27,
         "chain": "D",
         "distance": 7.229
       },
       {
-        "key": "D:45",
         "name": "VAL",
         "number": 45,
         "chain": "D",
@@ -1519,91 +1317,78 @@
     ]
   },
   {
-    "key": "A:83",
     "chain": "A",
     "number": 83,
     "name": "ARG",
     "letter": "R",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 2.497
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 2.652
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 3.066
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 3.346
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 5.15
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 5.526
       },
       {
-        "key": "D:27",
         "name": "PRO",
         "number": 27,
         "chain": "D",
         "distance": 5.573
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 6.811
       },
       {
-        "key": "D:41",
         "name": "LEU",
         "number": 41,
         "chain": "D",
         "distance": 7.233
       },
       {
-        "key": "D:45",
         "name": "VAL",
         "number": 45,
         "chain": "D",
         "distance": 7.516
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 7.629
       },
       {
-        "key": "D:28",
         "name": "GLU",
         "number": 28,
         "chain": "D",
@@ -1612,42 +1397,36 @@
     ]
   },
   {
-    "key": "A:84",
     "chain": "A",
     "number": 84,
     "name": "ASN",
     "letter": "N",
     "neighbors": [
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 3.13
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 5.082
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 5.504
       },
       {
-        "key": "D:27",
         "name": "PRO",
         "number": 27,
         "chain": "D",
         "distance": 6.826
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
@@ -1656,56 +1435,48 @@
     ]
   },
   {
-    "key": "A:85",
     "chain": "A",
     "number": 85,
     "name": "SER",
     "letter": "S",
     "neighbors": [
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 3.55
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 6.568
       },
       {
-        "key": "D:30",
         "name": "TYR",
         "number": 30,
         "chain": "D",
         "distance": 6.587
       },
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 7.152
       },
       {
-        "key": "D:27",
         "name": "PRO",
         "number": 27,
         "chain": "D",
         "distance": 7.401
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 7.478
       },
       {
-        "key": "D:28",
         "name": "GLU",
         "number": 28,
         "chain": "D",
@@ -1714,21 +1485,18 @@
     ]
   },
   {
-    "key": "A:86",
     "chain": "A",
     "number": 86,
     "name": "ASP",
     "letter": "D",
     "neighbors": [
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 6.372
       },
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
@@ -1737,63 +1505,54 @@
     ]
   },
   {
-    "key": "A:87",
     "chain": "A",
     "number": 87,
     "name": "ARG",
     "letter": "R",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 2.926
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 4.313
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 6.196
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 6.725
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 6.906
       },
       {
-        "key": "D:27",
         "name": "PRO",
         "number": 27,
         "chain": "D",
         "distance": 7.339
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 7.498
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
@@ -1802,7 +1561,6 @@
     ]
   },
   {
-    "key": "A:88",
     "chain": "A",
     "number": 88,
     "name": "ILE",
@@ -1810,14 +1568,12 @@
     "neighbors": []
   },
   {
-    "key": "A:89",
     "chain": "A",
     "number": 89,
     "name": "LEU",
     "letter": "L",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
@@ -1826,7 +1582,6 @@
     ]
   },
   {
-    "key": "A:90",
     "chain": "A",
     "number": 90,
     "name": "TYR",
@@ -1834,7 +1589,6 @@
     "neighbors": []
   },
   {
-    "key": "A:91",
     "chain": "A",
     "number": 91,
     "name": "SER",
@@ -1842,7 +1596,6 @@
     "neighbors": []
   },
   {
-    "key": "A:92",
     "chain": "A",
     "number": 92,
     "name": "SER",
@@ -1850,7 +1603,6 @@
     "neighbors": []
   },
   {
-    "key": "A:93",
     "chain": "A",
     "number": 93,
     "name": "ASP",
@@ -1858,7 +1610,6 @@
     "neighbors": []
   },
   {
-    "key": "A:94",
     "chain": "A",
     "number": 94,
     "name": "TRP",
@@ -1866,7 +1617,6 @@
     "neighbors": []
   },
   {
-    "key": "A:95",
     "chain": "A",
     "number": 95,
     "name": "LEU",
@@ -1874,7 +1624,6 @@
     "neighbors": []
   },
   {
-    "key": "A:96",
     "chain": "A",
     "number": 96,
     "name": "ILE",
@@ -1882,7 +1631,6 @@
     "neighbors": []
   },
   {
-    "key": "A:97",
     "chain": "A",
     "number": 97,
     "name": "TYR",
@@ -1890,7 +1638,6 @@
     "neighbors": []
   },
   {
-    "key": "A:98",
     "chain": "A",
     "number": 98,
     "name": "LYS",
@@ -1898,21 +1645,18 @@
     "neighbors": []
   },
   {
-    "key": "A:99",
     "chain": "A",
     "number": 99,
     "name": "THR",
     "letter": "T",
     "neighbors": [
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 7.399
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
@@ -1921,14 +1665,12 @@
     ]
   },
   {
-    "key": "A:100",
     "chain": "A",
     "number": 100,
     "name": "THR",
     "letter": "T",
     "neighbors": [
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
@@ -1937,49 +1679,42 @@
     ]
   },
   {
-    "key": "A:101",
     "chain": "A",
     "number": 101,
     "name": "ASP",
     "letter": "D",
     "neighbors": [
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 4.426
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 4.58
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 5.329
       },
       {
-        "key": "D:30",
         "name": "TYR",
         "number": 30,
         "chain": "D",
         "distance": 5.765
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 6.46
       },
       {
-        "key": "D:32",
         "name": "GLU",
         "number": 32,
         "chain": "D",
@@ -1988,133 +1723,114 @@
     ]
   },
   {
-    "key": "A:102",
     "chain": "A",
     "number": 102,
     "name": "HIS",
     "letter": "H",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 2.805
       },
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 3.035
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 3.221
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 3.363
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 3.54
       },
       {
-        "key": "D:30",
         "name": "TYR",
         "number": 30,
         "chain": "D",
         "distance": 3.754
       },
       {
-        "key": "D:27",
         "name": "PRO",
         "number": 27,
         "chain": "D",
         "distance": 4.706
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 4.944
       },
       {
-        "key": "D:37",
         "name": "LEU",
         "number": 37,
         "chain": "D",
         "distance": 5.422
       },
       {
-        "key": "D:32",
         "name": "GLU",
         "number": 32,
         "chain": "D",
         "distance": 5.432
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 5.545
       },
       {
-        "key": "D:44",
         "name": "TRP",
         "number": 44,
         "chain": "D",
         "distance": 6.974
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 7.074
       },
       {
-        "key": "D:26",
         "name": "LEU",
         "number": 26,
         "chain": "D",
         "distance": 7.205
       },
       {
-        "key": "D:28",
         "name": "GLU",
         "number": 28,
         "chain": "D",
         "distance": 7.386
       },
       {
-        "key": "D:43",
         "name": "GLY",
         "number": 43,
         "chain": "D",
         "distance": 7.464
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
         "distance": 7.497
       },
       {
-        "key": "D:41",
         "name": "LEU",
         "number": 41,
         "chain": "D",
@@ -2123,98 +1839,84 @@
     ]
   },
   {
-    "key": "A:103",
     "chain": "A",
     "number": 103,
     "name": "TYR",
     "letter": "Y",
     "neighbors": [
       {
-        "key": "D:39",
         "name": "ASP",
         "number": 39,
         "chain": "D",
         "distance": 3.358
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 3.599
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 3.721
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 3.811
       },
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 5.576
       },
       {
-        "key": "D:37",
         "name": "LEU",
         "number": 37,
         "chain": "D",
         "distance": 6.035
       },
       {
-        "key": "D:40",
         "name": "ALA",
         "number": 40,
         "chain": "D",
         "distance": 6.352
       },
       {
-        "key": "D:38",
         "name": "TRP",
         "number": 38,
         "chain": "D",
         "distance": 6.42
       },
       {
-        "key": "D:34",
         "name": "LEU",
         "number": 34,
         "chain": "D",
         "distance": 6.815
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 6.845
       },
       {
-        "key": "D:42",
         "name": "THR",
         "number": 42,
         "chain": "D",
         "distance": 7.257
       },
       {
-        "key": "D:30",
         "name": "TYR",
         "number": 30,
         "chain": "D",
         "distance": 7.374
       },
       {
-        "key": "D:32",
         "name": "GLU",
         "number": 32,
         "chain": "D",
@@ -2223,63 +1925,54 @@
     ]
   },
   {
-    "key": "A:104",
     "chain": "A",
     "number": 104,
     "name": "GLN",
     "letter": "Q",
     "neighbors": [
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
         "distance": 3.26
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 3.568
       },
       {
-        "key": "D:30",
         "name": "TYR",
         "number": 30,
         "chain": "D",
         "distance": 4.651
       },
       {
-        "key": "D:29",
         "name": "TYR",
         "number": 29,
         "chain": "D",
         "distance": 4.839
       },
       {
-        "key": "D:32",
         "name": "GLU",
         "number": 32,
         "chain": "D",
         "distance": 5.393
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
         "distance": 6.501
       },
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 7.001
       },
       {
-        "key": "D:28",
         "name": "GLU",
         "number": 28,
         "chain": "D",
@@ -2288,21 +1981,18 @@
     ]
   },
   {
-    "key": "A:105",
     "chain": "A",
     "number": 105,
     "name": "THR",
     "letter": "T",
     "neighbors": [
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 6.194
       },
       {
-        "key": "D:31",
         "name": "GLY",
         "number": 31,
         "chain": "D",
@@ -2311,28 +2001,24 @@
     ]
   },
   {
-    "key": "A:106",
     "chain": "A",
     "number": 106,
     "name": "PHE",
     "letter": "F",
     "neighbors": [
       {
-        "key": "D:35",
         "name": "ASP",
         "number": 35,
         "chain": "D",
         "distance": 4.98
       },
       {
-        "key": "D:33",
         "name": "ASN",
         "number": 33,
         "chain": "D",
         "distance": 6.561
       },
       {
-        "key": "D:36",
         "name": "ALA",
         "number": 36,
         "chain": "D",
@@ -2341,7 +2027,6 @@
     ]
   },
   {
-    "key": "A:107",
     "chain": "A",
     "number": 107,
     "name": "THR",
@@ -2349,7 +2034,6 @@
     "neighbors": []
   },
   {
-    "key": "A:108",
     "chain": "A",
     "number": 108,
     "name": "LYS",
@@ -2357,7 +2041,6 @@
     "neighbors": []
   },
   {
-    "key": "A:109",
     "chain": "A",
     "number": 109,
     "name": "ILE",
@@ -2365,7 +2048,6 @@
     "neighbors": []
   },
   {
-    "key": "A:110",
     "chain": "A",
     "number": 110,
     "name": "ARG",
@@ -2373,7 +2055,6 @@
     "neighbors": []
   },
   {
-    "key": "D:1",
     "chain": "D",
     "number": 1,
     "name": "LYS",
@@ -2381,7 +2062,6 @@
     "neighbors": []
   },
   {
-    "key": "D:2",
     "chain": "D",
     "number": 2,
     "name": "LYS",
@@ -2389,7 +2069,6 @@
     "neighbors": []
   },
   {
-    "key": "D:3",
     "chain": "D",
     "number": 3,
     "name": "ALA",
@@ -2397,7 +2076,6 @@
     "neighbors": []
   },
   {
-    "key": "D:4",
     "chain": "D",
     "number": 4,
     "name": "VAL",
@@ -2405,7 +2083,6 @@
     "neighbors": []
   },
   {
-    "key": "D:5",
     "chain": "D",
     "number": 5,
     "name": "ILE",
@@ -2413,7 +2090,6 @@
     "neighbors": []
   },
   {
-    "key": "D:6",
     "chain": "D",
     "number": 6,
     "name": "ASN",
@@ -2421,7 +2097,6 @@
     "neighbors": []
   },
   {
-    "key": "D:7",
     "chain": "D",
     "number": 7,
     "name": "GLY",
@@ -2429,7 +2104,6 @@
     "neighbors": []
   },
   {
-    "key": "D:8",
     "chain": "D",
     "number": 8,
     "name": "GLU",
@@ -2437,7 +2111,6 @@
     "neighbors": []
   },
   {
-    "key": "D:9",
     "chain": "D",
     "number": 9,
     "name": "GLN",
@@ -2445,7 +2118,6 @@
     "neighbors": []
   },
   {
-    "key": "D:10",
     "chain": "D",
     "number": 10,
     "name": "ILE",
@@ -2453,7 +2125,6 @@
     "neighbors": []
   },
   {
-    "key": "D:11",
     "chain": "D",
     "number": 11,
     "name": "ARG",
@@ -2461,7 +2132,6 @@
     "neighbors": []
   },
   {
-    "key": "D:12",
     "chain": "D",
     "number": 12,
     "name": "SER",
@@ -2469,14 +2139,12 @@
     "neighbors": []
   },
   {
-    "key": "D:13",
     "chain": "D",
     "number": 13,
     "name": "ILE",
     "letter": "I",
     "neighbors": [
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
@@ -2485,7 +2153,6 @@
     ]
   },
   {
-    "key": "D:14",
     "chain": "D",
     "number": 14,
     "name": "SER",
@@ -2493,7 +2160,6 @@
     "neighbors": []
   },
   {
-    "key": "D:15",
     "chain": "D",
     "number": 15,
     "name": "ASP",
@@ -2501,7 +2167,6 @@
     "neighbors": []
   },
   {
-    "key": "D:16",
     "chain": "D",
     "number": 16,
     "name": "LEU",
@@ -2509,14 +2174,12 @@
     "neighbors": []
   },
   {
-    "key": "D:17",
     "chain": "D",
     "number": 17,
     "name": "HIS",
     "letter": "H",
     "neighbors": [
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
@@ -2525,7 +2188,6 @@
     ]
   },
   {
-    "key": "D:18",
     "chain": "D",
     "number": 18,
     "name": "GLN",
@@ -2533,7 +2195,6 @@
     "neighbors": []
   },
   {
-    "key": "D:19",
     "chain": "D",
     "number": 19,
     "name": "THR",
@@ -2541,7 +2202,6 @@
     "neighbors": []
   },
   {
-    "key": "D:20",
     "chain": "D",
     "number": 20,
     "name": "LEU",
@@ -2549,7 +2209,6 @@
     "neighbors": []
   },
   {
-    "key": "D:21",
     "chain": "D",
     "number": 21,
     "name": "LYS",
@@ -2557,7 +2216,6 @@
     "neighbors": []
   },
   {
-    "key": "D:22",
     "chain": "D",
     "number": 22,
     "name": "LYS",
@@ -2565,7 +2223,6 @@
     "neighbors": []
   },
   {
-    "key": "D:23",
     "chain": "D",
     "number": 23,
     "name": "GLU",
@@ -2573,7 +2230,6 @@
     "neighbors": []
   },
   {
-    "key": "D:24",
     "chain": "D",
     "number": 24,
     "name": "LEU",
@@ -2581,7 +2237,6 @@
     "neighbors": []
   },
   {
-    "key": "D:25",
     "chain": "D",
     "number": 25,
     "name": "ALA",
@@ -2589,14 +2244,12 @@
     "neighbors": []
   },
   {
-    "key": "D:26",
     "chain": "D",
     "number": 26,
     "name": "LEU",
     "letter": "L",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
@@ -2605,49 +2258,42 @@
     ]
   },
   {
-    "key": "D:27",
     "chain": "D",
     "number": 27,
     "name": "PRO",
     "letter": "P",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 4.706
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 5.573
       },
       {
-        "key": "A:84",
         "name": "ASN",
         "number": 84,
         "chain": "A",
         "distance": 6.826
       },
       {
-        "key": "A:82",
         "name": "PHE",
         "number": 82,
         "chain": "A",
         "distance": 7.229
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 7.339
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
@@ -2656,35 +2302,30 @@
     ]
   },
   {
-    "key": "D:28",
     "chain": "D",
     "number": 28,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 7.386
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
         "distance": 7.755
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 7.796
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
@@ -2693,91 +2334,78 @@
     ]
   },
   {
-    "key": "D:29",
     "chain": "D",
     "number": 29,
     "name": "TYR",
     "letter": "Y",
     "neighbors": [
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 2.652
       },
       {
-        "key": "A:84",
         "name": "ASN",
         "number": 84,
         "chain": "A",
         "distance": 3.13
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 3.54
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
         "distance": 3.55
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 4.313
       },
       {
-        "key": "A:101",
         "name": "ASP",
         "number": 101,
         "chain": "A",
         "distance": 4.58
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 4.839
       },
       {
-        "key": "A:82",
         "name": "PHE",
         "number": 82,
         "chain": "A",
         "distance": 5.687
       },
       {
-        "key": "A:86",
         "name": "ASP",
         "number": 86,
         "chain": "A",
         "distance": 6.372
       },
       {
-        "key": "A:100",
         "name": "THR",
         "number": 100,
         "chain": "A",
         "distance": 6.445
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 6.845
       },
       {
-        "key": "A:75",
         "name": "ASP",
         "number": 75,
         "chain": "A",
@@ -2786,42 +2414,36 @@
     ]
   },
   {
-    "key": "D:30",
     "chain": "D",
     "number": 30,
     "name": "TYR",
     "letter": "Y",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 3.754
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 4.651
       },
       {
-        "key": "A:101",
         "name": "ASP",
         "number": 101,
         "chain": "A",
         "distance": 5.765
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
         "distance": 6.587
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
@@ -2830,63 +2452,54 @@
     ]
   },
   {
-    "key": "D:31",
     "chain": "D",
     "number": 31,
     "name": "GLY",
     "letter": "G",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 3.035
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 3.26
       },
       {
-        "key": "A:101",
         "name": "ASP",
         "number": 101,
         "chain": "A",
         "distance": 4.426
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 5.576
       },
       {
-        "key": "A:62",
         "name": "LYS",
         "number": 62,
         "chain": "A",
         "distance": 6.591
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
         "distance": 7.152
       },
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
         "distance": 7.162
       },
       {
-        "key": "A:105",
         "name": "THR",
         "number": 105,
         "chain": "A",
@@ -2895,49 +2508,42 @@
     ]
   },
   {
-    "key": "D:32",
     "chain": "D",
     "number": 32,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
         "distance": 5.354
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 5.393
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 5.432
       },
       {
-        "key": "A:101",
         "name": "ASP",
         "number": 101,
         "chain": "A",
         "distance": 6.785
       },
       {
-        "key": "A:62",
         "name": "LYS",
         "number": 62,
         "chain": "A",
         "distance": 7.017
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
@@ -2946,84 +2552,72 @@
     ]
   },
   {
-    "key": "D:33",
     "chain": "D",
     "number": 33,
     "name": "ASN",
     "letter": "N",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 3.221
       },
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
         "distance": 3.383
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 3.568
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 3.599
       },
       {
-        "key": "A:62",
         "name": "LYS",
         "number": 62,
         "chain": "A",
         "distance": 4.487
       },
       {
-        "key": "A:101",
         "name": "ASP",
         "number": 101,
         "chain": "A",
         "distance": 5.329
       },
       {
-        "key": "A:105",
         "name": "THR",
         "number": 105,
         "chain": "A",
         "distance": 6.194
       },
       {
-        "key": "A:106",
         "name": "PHE",
         "number": 106,
         "chain": "A",
         "distance": 6.561
       },
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 6.758
       },
       {
-        "key": "A:56",
         "name": "PHE",
         "number": 56,
         "chain": "A",
         "distance": 7.053
       },
       {
-        "key": "A:99",
         "name": "THR",
         "number": 99,
         "chain": "A",
@@ -3032,63 +2626,54 @@
     ]
   },
   {
-    "key": "D:34",
     "chain": "D",
     "number": 34,
     "name": "LEU",
     "letter": "L",
     "neighbors": [
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
         "distance": 2.836
       },
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 3.778
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 6.815
       },
       {
-        "key": "A:62",
         "name": "LYS",
         "number": 62,
         "chain": "A",
         "distance": 6.847
       },
       {
-        "key": "A:58",
         "name": "ASN",
         "number": 58,
         "chain": "A",
         "distance": 7.142
       },
       {
-        "key": "A:56",
         "name": "PHE",
         "number": 56,
         "chain": "A",
         "distance": 7.322
       },
       {
-        "key": "A:61",
         "name": "GLY",
         "number": 61,
         "chain": "A",
         "distance": 7.393
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
@@ -3097,126 +2682,108 @@
     ]
   },
   {
-    "key": "D:35",
     "chain": "D",
     "number": 35,
     "name": "ASP",
     "letter": "D",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 2.877
       },
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
         "distance": 3.375
       },
       {
-        "key": "A:56",
         "name": "PHE",
         "number": 56,
         "chain": "A",
         "distance": 3.514
       },
       {
-        "key": "A:58",
         "name": "ASN",
         "number": 58,
         "chain": "A",
         "distance": 3.697
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 3.811
       },
       {
-        "key": "A:57",
         "name": "SER",
         "number": 57,
         "chain": "A",
         "distance": 4.515
       },
       {
-        "key": "A:106",
         "name": "PHE",
         "number": 106,
         "chain": "A",
         "distance": 4.98
       },
       {
-        "key": "A:61",
         "name": "GLY",
         "number": 61,
         "chain": "A",
         "distance": 5.162
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 5.545
       },
       {
-        "key": "A:62",
         "name": "LYS",
         "number": 62,
         "chain": "A",
         "distance": 5.559
       },
       {
-        "key": "A:73",
         "name": "GLU",
         "number": 73,
         "chain": "A",
         "distance": 5.896
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 7.001
       },
       {
-        "key": "A:63",
         "name": "LEU",
         "number": 63,
         "chain": "A",
         "distance": 7.066
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 7.323
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 7.58
       },
       {
-        "key": "A:89",
         "name": "LEU",
         "number": 89,
         "chain": "A",
         "distance": 7.723
       },
       {
-        "key": "A:99",
         "name": "THR",
         "number": 99,
         "chain": "A",
@@ -3225,91 +2792,78 @@
     ]
   },
   {
-    "key": "D:36",
     "chain": "D",
     "number": 36,
     "name": "ALA",
     "letter": "A",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 3.363
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 3.721
       },
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
         "distance": 6.455
       },
       {
-        "key": "A:101",
         "name": "ASP",
         "number": 101,
         "chain": "A",
         "distance": 6.46
       },
       {
-        "key": "A:104",
         "name": "GLN",
         "number": 104,
         "chain": "A",
         "distance": 6.501
       },
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 6.517
       },
       {
-        "key": "A:56",
         "name": "PHE",
         "number": 56,
         "chain": "A",
         "distance": 6.527
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 7.498
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 7.629
       },
       {
-        "key": "A:62",
         "name": "LYS",
         "number": 62,
         "chain": "A",
         "distance": 7.689
       },
       {
-        "key": "A:106",
         "name": "PHE",
         "number": 106,
         "chain": "A",
         "distance": 7.728
       },
       {
-        "key": "A:73",
         "name": "GLU",
         "number": 73,
         "chain": "A",
@@ -3318,35 +2872,30 @@
     ]
   },
   {
-    "key": "D:37",
     "chain": "D",
     "number": 37,
     "name": "LEU",
     "letter": "L",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 5.422
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 6.035
       },
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 6.74
       },
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
@@ -3355,84 +2904,72 @@
     ]
   },
   {
-    "key": "D:38",
     "chain": "D",
     "number": 38,
     "name": "TRP",
     "letter": "W",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 3.263
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 3.801
       },
       {
-        "key": "A:73",
         "name": "GLU",
         "number": 73,
         "chain": "A",
         "distance": 4.88
       },
       {
-        "key": "A:55",
         "name": "ILE",
         "number": 55,
         "chain": "A",
         "distance": 4.902
       },
       {
-        "key": "A:57",
         "name": "SER",
         "number": 57,
         "chain": "A",
         "distance": 5.959
       },
       {
-        "key": "A:56",
         "name": "PHE",
         "number": 56,
         "chain": "A",
         "distance": 6.215
       },
       {
-        "key": "A:54",
         "name": "ASP",
         "number": 54,
         "chain": "A",
         "distance": 6.41
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 6.42
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 6.811
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 7.074
       },
       {
-        "key": "A:58",
         "name": "ASN",
         "number": 58,
         "chain": "A",
@@ -3441,126 +2978,108 @@
     ]
   },
   {
-    "key": "D:39",
     "chain": "D",
     "number": 39,
     "name": "ASP",
     "letter": "D",
     "neighbors": [
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 2.497
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 2.805
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 2.926
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 3.358
       },
       {
-        "key": "A:73",
         "name": "GLU",
         "number": 73,
         "chain": "A",
         "distance": 4.486
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 4.553
       },
       {
-        "key": "A:84",
         "name": "ASN",
         "number": 84,
         "chain": "A",
         "distance": 5.082
       },
       {
-        "key": "A:75",
         "name": "ASP",
         "number": 75,
         "chain": "A",
         "distance": 5.202
       },
       {
-        "key": "A:51",
         "name": "ILE",
         "number": 51,
         "chain": "A",
         "distance": 6.407
       },
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 6.515
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
         "distance": 6.568
       },
       {
-        "key": "A:35",
         "name": "TRP",
         "number": 35,
         "chain": "A",
         "distance": 6.972
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 6.973
       },
       {
-        "key": "A:56",
         "name": "PHE",
         "number": 56,
         "chain": "A",
         "distance": 7.17
       },
       {
-        "key": "A:86",
         "name": "ASP",
         "number": 86,
         "chain": "A",
         "distance": 7.609
       },
       {
-        "key": "A:54",
         "name": "ASP",
         "number": 54,
         "chain": "A",
         "distance": 7.915
       },
       {
-        "key": "A:74",
         "name": "ALA",
         "number": 74,
         "chain": "A",
@@ -3569,56 +3088,48 @@
     ]
   },
   {
-    "key": "D:40",
     "chain": "D",
     "number": 40,
     "name": "ALA",
     "letter": "A",
     "neighbors": [
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 4.944
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 5.526
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 6.286
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 6.352
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 6.848
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 6.906
       },
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
@@ -3627,49 +3138,42 @@
     ]
   },
   {
-    "key": "D:41",
     "chain": "D",
     "number": 41,
     "name": "LEU",
     "letter": "L",
     "neighbors": [
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 6.595
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 7.183
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 7.233
       },
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
         "distance": 7.442
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 7.579
       },
       {
-        "key": "A:35",
         "name": "TRP",
         "number": 35,
         "chain": "A",
@@ -3678,91 +3182,78 @@
     ]
   },
   {
-    "key": "D:42",
     "chain": "D",
     "number": 42,
     "name": "THR",
     "letter": "T",
     "neighbors": [
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 2.949
       },
       {
-        "key": "A:35",
         "name": "TRP",
         "number": 35,
         "chain": "A",
         "distance": 4.021
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 5.105
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 5.15
       },
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
         "distance": 5.469
       },
       {
-        "key": "A:73",
         "name": "GLU",
         "number": 73,
         "chain": "A",
         "distance": 6.532
       },
       {
-        "key": "A:51",
         "name": "ILE",
         "number": 51,
         "chain": "A",
         "distance": 7.058
       },
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 7.112
       },
       {
-        "key": "A:103",
         "name": "TYR",
         "number": 103,
         "chain": "A",
         "distance": 7.257
       },
       {
-        "key": "A:54",
         "name": "ASP",
         "number": 54,
         "chain": "A",
         "distance": 7.262
       },
       {
-        "key": "A:28",
         "name": "SER",
         "number": 28,
         "chain": "A",
         "distance": 7.342
       },
       {
-        "key": "A:55",
         "name": "ILE",
         "number": 55,
         "chain": "A",
@@ -3771,105 +3262,90 @@
     ]
   },
   {
-    "key": "D:43",
     "chain": "D",
     "number": 43,
     "name": "GLY",
     "letter": "G",
     "neighbors": [
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 3.066
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 3.424
       },
       {
-        "key": "A:35",
         "name": "TRP",
         "number": 35,
         "chain": "A",
         "distance": 3.911
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 5.107
       },
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
         "distance": 5.957
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 6.196
       },
       {
-        "key": "A:82",
         "name": "PHE",
         "number": 82,
         "chain": "A",
         "distance": 6.706
       },
       {
-        "key": "A:51",
         "name": "ILE",
         "number": 51,
         "chain": "A",
         "distance": 6.941
       },
       {
-        "key": "A:75",
         "name": "ASP",
         "number": 75,
         "chain": "A",
         "distance": 7.022
       },
       {
-        "key": "A:36",
         "name": "VAL",
         "number": 36,
         "chain": "A",
         "distance": 7.147
       },
       {
-        "key": "A:84",
         "name": "ASN",
         "number": 84,
         "chain": "A",
         "distance": 7.33
       },
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
         "distance": 7.403
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 7.464
       },
       {
-        "key": "A:40",
         "name": "GLY",
         "number": 40,
         "chain": "A",
@@ -3878,105 +3354,90 @@
     ]
   },
   {
-    "key": "D:44",
     "chain": "D",
     "number": 44,
     "name": "TRP",
     "letter": "W",
     "neighbors": [
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 3.346
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 3.421
       },
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
         "distance": 3.499
       },
       {
-        "key": "A:82",
         "name": "PHE",
         "number": 82,
         "chain": "A",
         "distance": 3.607
       },
       {
-        "key": "A:84",
         "name": "ASN",
         "number": 84,
         "chain": "A",
         "distance": 5.504
       },
       {
-        "key": "A:35",
         "name": "TRP",
         "number": 35,
         "chain": "A",
         "distance": 5.571
       },
       {
-        "key": "A:39",
         "name": "LYS",
         "number": 39,
         "chain": "A",
         "distance": 5.872
       },
       {
-        "key": "A:36",
         "name": "VAL",
         "number": 36,
         "chain": "A",
         "distance": 6.463
       },
       {
-        "key": "A:87",
         "name": "ARG",
         "number": 87,
         "chain": "A",
         "distance": 6.725
       },
       {
-        "key": "A:40",
         "name": "GLY",
         "number": 40,
         "chain": "A",
         "distance": 6.888
       },
       {
-        "key": "A:102",
         "name": "HIS",
         "number": 102,
         "chain": "A",
         "distance": 6.974
       },
       {
-        "key": "A:81",
         "name": "GLY",
         "number": 81,
         "chain": "A",
         "distance": 7.098
       },
       {
-        "key": "A:85",
         "name": "SER",
         "number": 85,
         "chain": "A",
         "distance": 7.478
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
@@ -3985,49 +3446,42 @@
     ]
   },
   {
-    "key": "D:45",
     "chain": "D",
     "number": 45,
     "name": "VAL",
     "letter": "V",
     "neighbors": [
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
         "distance": 4.314
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 4.688
       },
       {
-        "key": "A:36",
         "name": "VAL",
         "number": 36,
         "chain": "A",
         "distance": 6.439
       },
       {
-        "key": "A:39",
         "name": "LYS",
         "number": 39,
         "chain": "A",
         "distance": 6.95
       },
       {
-        "key": "A:83",
         "name": "ARG",
         "number": 83,
         "chain": "A",
         "distance": 7.516
       },
       {
-        "key": "A:82",
         "name": "PHE",
         "number": 82,
         "chain": "A",
@@ -4036,35 +3490,30 @@
     ]
   },
   {
-    "key": "D:46",
     "chain": "D",
     "number": 46,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
         "distance": 3.722
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
         "distance": 6.281
       },
       {
-        "key": "A:36",
         "name": "VAL",
         "number": 36,
         "chain": "A",
         "distance": 6.591
       },
       {
-        "key": "A:39",
         "name": "LYS",
         "number": 39,
         "chain": "A",
@@ -4073,35 +3522,30 @@
     ]
   },
   {
-    "key": "D:47",
     "chain": "D",
     "number": 47,
     "name": "TYR",
     "letter": "Y",
     "neighbors": [
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
         "distance": 4.868
       },
       {
-        "key": "A:36",
         "name": "VAL",
         "number": 36,
         "chain": "A",
         "distance": 6.481
       },
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
         "distance": 6.755
       },
       {
-        "key": "A:37",
         "name": "ALA",
         "number": 37,
         "chain": "A",
@@ -4110,14 +3554,12 @@
     ]
   },
   {
-    "key": "D:48",
     "chain": "D",
     "number": 48,
     "name": "PRO",
     "letter": "P",
     "neighbors": [
       {
-        "key": "A:38",
         "name": "SER",
         "number": 38,
         "chain": "A",
@@ -4126,7 +3568,6 @@
     ]
   },
   {
-    "key": "D:49",
     "chain": "D",
     "number": 49,
     "name": "LEU",
@@ -4134,7 +3575,6 @@
     "neighbors": []
   },
   {
-    "key": "D:50",
     "chain": "D",
     "number": 50,
     "name": "VAL",
@@ -4142,7 +3582,6 @@
     "neighbors": []
   },
   {
-    "key": "D:51",
     "chain": "D",
     "number": 51,
     "name": "LEU",
@@ -4150,7 +3589,6 @@
     "neighbors": []
   },
   {
-    "key": "D:52",
     "chain": "D",
     "number": 52,
     "name": "GLU",
@@ -4158,7 +3596,6 @@
     "neighbors": []
   },
   {
-    "key": "D:53",
     "chain": "D",
     "number": 53,
     "name": "TRP",
@@ -4166,7 +3603,6 @@
     "neighbors": []
   },
   {
-    "key": "D:54",
     "chain": "D",
     "number": 54,
     "name": "ARG",
@@ -4174,7 +3610,6 @@
     "neighbors": []
   },
   {
-    "key": "D:55",
     "chain": "D",
     "number": 55,
     "name": "GLN",
@@ -4182,7 +3617,6 @@
     "neighbors": []
   },
   {
-    "key": "D:56",
     "chain": "D",
     "number": 56,
     "name": "PHE",
@@ -4190,7 +3624,6 @@
     "neighbors": []
   },
   {
-    "key": "D:57",
     "chain": "D",
     "number": 57,
     "name": "GLU",
@@ -4198,7 +3631,6 @@
     "neighbors": []
   },
   {
-    "key": "D:58",
     "chain": "D",
     "number": 58,
     "name": "GLN",
@@ -4206,7 +3638,6 @@
     "neighbors": []
   },
   {
-    "key": "D:59",
     "chain": "D",
     "number": 59,
     "name": "SER",
@@ -4214,7 +3645,6 @@
     "neighbors": []
   },
   {
-    "key": "D:60",
     "chain": "D",
     "number": 60,
     "name": "LYS",
@@ -4222,7 +3652,6 @@
     "neighbors": []
   },
   {
-    "key": "D:61",
     "chain": "D",
     "number": 61,
     "name": "GLN",
@@ -4230,7 +3659,6 @@
     "neighbors": []
   },
   {
-    "key": "D:62",
     "chain": "D",
     "number": 62,
     "name": "LEU",
@@ -4238,7 +3666,6 @@
     "neighbors": []
   },
   {
-    "key": "D:63",
     "chain": "D",
     "number": 63,
     "name": "THR",
@@ -4246,7 +3673,6 @@
     "neighbors": []
   },
   {
-    "key": "D:66",
     "chain": "D",
     "number": 66,
     "name": "GLY",
@@ -4254,7 +3680,6 @@
     "neighbors": []
   },
   {
-    "key": "D:67",
     "chain": "D",
     "number": 67,
     "name": "ALA",
@@ -4262,7 +3687,6 @@
     "neighbors": []
   },
   {
-    "key": "D:68",
     "chain": "D",
     "number": 68,
     "name": "GLU",
@@ -4270,21 +3694,18 @@
     "neighbors": []
   },
   {
-    "key": "D:69",
     "chain": "D",
     "number": 69,
     "name": "SER",
     "letter": "S",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 6.736
       },
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
@@ -4293,14 +3714,12 @@
     ]
   },
   {
-    "key": "D:70",
     "chain": "D",
     "number": 70,
     "name": "VAL",
     "letter": "V",
     "neighbors": [
       {
-        "key": "A:60",
         "name": "GLU",
         "number": 60,
         "chain": "A",
@@ -4309,7 +3728,6 @@
     ]
   },
   {
-    "key": "D:71",
     "chain": "D",
     "number": 71,
     "name": "LEU",
@@ -4317,14 +3735,12 @@
     "neighbors": []
   },
   {
-    "key": "D:72",
     "chain": "D",
     "number": 72,
     "name": "GLN",
     "letter": "Q",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
@@ -4333,14 +3749,12 @@
     ]
   },
   {
-    "key": "D:73",
     "chain": "D",
     "number": 73,
     "name": "VAL",
     "letter": "V",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
@@ -4349,14 +3763,12 @@
     ]
   },
   {
-    "key": "D:74",
     "chain": "D",
     "number": 74,
     "name": "PHE",
     "letter": "F",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
@@ -4365,7 +3777,6 @@
     ]
   },
   {
-    "key": "D:75",
     "chain": "D",
     "number": 75,
     "name": "ARG",
@@ -4373,21 +3784,18 @@
     "neighbors": []
   },
   {
-    "key": "D:76",
     "chain": "D",
     "number": 76,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 2.965
       },
       {
-        "key": "A:57",
         "name": "SER",
         "number": 57,
         "chain": "A",
@@ -4396,14 +3804,12 @@
     ]
   },
   {
-    "key": "D:77",
     "chain": "D",
     "number": 77,
     "name": "ALA",
     "letter": "A",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
@@ -4412,7 +3818,6 @@
     ]
   },
   {
-    "key": "D:78",
     "chain": "D",
     "number": 78,
     "name": "LYS",
@@ -4420,7 +3825,6 @@
     "neighbors": []
   },
   {
-    "key": "D:79",
     "chain": "D",
     "number": 79,
     "name": "ALA",
@@ -4428,56 +3832,48 @@
     "neighbors": []
   },
   {
-    "key": "D:80",
     "chain": "D",
     "number": 80,
     "name": "GLU",
     "letter": "E",
     "neighbors": [
       {
-        "key": "A:59",
         "name": "ARG",
         "number": 59,
         "chain": "A",
         "distance": 5.862
       },
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
         "distance": 6.526
       },
       {
-        "key": "A:54",
         "name": "ASP",
         "number": 54,
         "chain": "A",
         "distance": 6.746
       },
       {
-        "key": "A:57",
         "name": "SER",
         "number": 57,
         "chain": "A",
         "distance": 6.862
       },
       {
-        "key": "A:27",
         "name": "LYS",
         "number": 27,
         "chain": "A",
         "distance": 6.895
       },
       {
-        "key": "A:55",
         "name": "ILE",
         "number": 55,
         "chain": "A",
         "distance": 7.058
       },
       {
-        "key": "A:28",
         "name": "SER",
         "number": 28,
         "chain": "A",
@@ -4486,14 +3882,12 @@
     ]
   },
   {
-    "key": "D:81",
     "chain": "D",
     "number": 81,
     "name": "GLY",
     "letter": "G",
     "neighbors": [
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
@@ -4502,14 +3896,12 @@
     ]
   },
   {
-    "key": "D:82",
     "chain": "D",
     "number": 82,
     "name": "ALA",
     "letter": "A",
     "neighbors": [
       {
-        "key": "A:31",
         "name": "GLN",
         "number": 31,
         "chain": "A",
@@ -4518,7 +3910,6 @@
     ]
   },
   {
-    "key": "D:83",
     "chain": "D",
     "number": 83,
     "name": "ASP",
@@ -4526,7 +3917,6 @@
     "neighbors": []
   },
   {
-    "key": "D:84",
     "chain": "D",
     "number": 84,
     "name": "ILE",
@@ -4534,7 +3924,6 @@
     "neighbors": []
   },
   {
-    "key": "D:85",
     "chain": "D",
     "number": 85,
     "name": "THR",
@@ -4542,7 +3931,6 @@
     "neighbors": []
   },
   {
-    "key": "D:86",
     "chain": "D",
     "number": 86,
     "name": "ILE",
@@ -4550,7 +3938,6 @@
     "neighbors": []
   },
   {
-    "key": "D:87",
     "chain": "D",
     "number": 87,
     "name": "ILE",
@@ -4558,7 +3945,6 @@
     "neighbors": []
   },
   {
-    "key": "D:88",
     "chain": "D",
     "number": 88,
     "name": "LEU",
@@ -4566,7 +3952,6 @@
     "neighbors": []
   },
   {
-    "key": "D:89",
     "chain": "D",
     "number": 89,
     "name": "SER",

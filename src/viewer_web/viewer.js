@@ -99,7 +99,7 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
     bridge.scene_changed.connect(loadScene);
     bridge.style_changed.connect(applyStyle);
     bridge.camera_command.connect(camera);
-    window.proteinBinding = { viewer, camera };
+    window.proteinBinding = { viewer };
     bridge.ready();
   } catch (error) {
     showError(error.message);

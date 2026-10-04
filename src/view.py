@@ -449,6 +449,8 @@ class MainWindow(QMainWindow):
         self.neighbors.setObjectName("neighbors")
         self.neighbors.setHorizontalHeaderLabels(["Residue", "Chain", "Distance"])
         self.neighbors.verticalHeader().hide()
+        self.neighbors.verticalHeader().setDefaultSectionSize(23)
+        self.neighbors.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
         self.neighbors.setShowGrid(False)
         self.neighbors.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
         self.neighbors.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
@@ -545,7 +547,6 @@ class MainWindow(QMainWindow):
             distance = QTableWidgetItem(f"{neighbor.distance:.2f} Å")
             distance.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
             self.neighbors.setItem(index, 2, distance)
-            self.neighbors.setRowHeight(index, 23)
         self.neighbors.ensurePolished()
         header_height = self.neighbors.horizontalHeader().sizeHint().height()
         self.neighbors.setFixedHeight(
@@ -554,21 +555,20 @@ class MainWindow(QMainWindow):
 
     def _show_prediction(self, state):
         result = state.prediction
-        residue = state.structure.residue(state.selected)
-        mutation = f"{residue.letter}{residue.key.number}{state.replacement}"
-        self.prediction_title.setText(f"Predicted ΔΔG · {mutation}")
+        self.prediction_title.setText(f"Predicted ΔΔG · {state.request.label}")
         value = result.predicted if result else None
         self.prediction_value.setText(f"{value:+.2f}" if value is not None else "—")
         self.scale.value = value
         self.scale.update()
         experimental = result.experimental if result else None
         self.experimental_value.setText(f"{experimental:+.2f}" if experimental is not None else "—")
+        note = "Illustrative values · No model connected"
         if state.error:
             direction, note = "Preview failed", state.error
         elif state.busy:
-            direction, note = "Loading preview…", "Illustrative values · No model connected"
+            direction = "Loading preview…"
         elif result is None:
-            direction, note = "Ready to preview", "Illustrative values · No model connected"
+            direction = "Ready to preview"
         elif value is None:
             direction, note = "No demo value", "Try D39 → A or N for a prepared example."
         else:
@@ -579,6 +579,5 @@ class MainWindow(QMainWindow):
                 if value < 0
                 else "No change"
             )
-            note = "Illustrative values · No model connected"
         self.prediction_direction.setText(direction)
         self.prediction_note.setText(note)

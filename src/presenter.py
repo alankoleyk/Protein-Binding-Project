@@ -4,8 +4,6 @@ from dataclasses import replace
 
 from contracts import (
     BackendPort,
-    PredictionRequest,
-    PredictionResult,
     ResidueKey,
     TaskPort,
     ViewPort,
@@ -68,26 +66,15 @@ class MainPresenter:
     def predict(self) -> None:
         if self.state.busy:
             return
-        residue = self.state.structure.residue(self.state.selected)
-        request = PredictionRequest(
-            self.state.structure.code,
-            residue.key,
-            residue.letter,
-            self.state.replacement,
-            self.state.cutoff,
-        )
+        request = self.state.request
         revision = self._revision
         self._render(busy=True, prediction=None, error="")
         self.tasks.submit(
             lambda: self.backend.predict(request),
-            lambda result: self._complete(revision, result),
-            lambda message: self._fail(revision, message),
+            lambda result: self._finish(revision, prediction=result),
+            lambda message: self._finish(revision, error=message),
         )
 
-    def _complete(self, revision: int, result: PredictionResult) -> None:
+    def _finish(self, revision: int, **changes) -> None:
         if revision == self._revision:
-            self._render(busy=False, prediction=result)
-
-    def _fail(self, revision: int, message: str) -> None:
-        if revision == self._revision:
-            self._render(busy=False, error=message)
+            self._render(busy=False, **changes)

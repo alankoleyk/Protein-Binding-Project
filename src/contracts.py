@@ -83,6 +83,16 @@ class ViewState:
     busy: bool = False
     error: str = ""
 
+    @property
+    def request(self) -> PredictionRequest:
+        return PredictionRequest(
+            self.structure.code,
+            self.selected,
+            self.structure.residue(self.selected).letter,
+            self.replacement,
+            self.cutoff,
+        )
+
 
 class ViewPort(Protocol):
     def render(self, state: ViewState) -> None: ...

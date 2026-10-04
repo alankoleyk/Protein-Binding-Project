@@ -118,7 +118,7 @@ Loading this small demo and filtering its precomputed contacts are synchronous; 
 
 ## Tests and code checks
 
-Tests use Python's standard-library **`unittest`**, not pytest. Run commands from the project root with the environment active.
+Tests use Python's standard-library **`unittest`**; no separate test framework is required. The tests cover presenter behavior, GUI signal wiring, layout stability, and worker callbacks. Run commands from the project root with the environment active.
 
 Fast presenter tests, without starting Qt or downloading the viewer resources:
 
