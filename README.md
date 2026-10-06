@@ -4,6 +4,8 @@ An early desktop GUI for our protein-binding project, built with PySide6, Qt Wid
 
 The layout puts the 3D structure and residue sequence on the left, and interface settings, mutation selection, demo predictions, and nearby residues on the right.
 
+![GUI](./example.png)
+
 ## Set up the environment
 
 Install [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) first. Run the following commands from the project root, where this README is located.
