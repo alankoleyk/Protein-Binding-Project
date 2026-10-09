@@ -110,10 +110,12 @@ PYTHONPATH=src python -m unittest discover -s tests/unit -v
 
 ### Code review walkthrough
 
+The `review-walkthrough` branch and the script in `auxiliary/` are temporary for the classroom review and will be deleted afterward. This branch is not intended to be merged.
+
 To follow `predict()`, `_invalidate()`, and `_finish()` in the console, run:
 
 ```bash
-python src/review_prediction.py
+PYTHONPATH=src python auxiliary/review_prediction.py
 ```
 
 This uses the real presenter and demo backend with manually completed tasks. It prints the input, revision, busy state, result, error, and pending task count after each action. Two scenarios show an outdated request succeeding or failing while the current request is still pending. Expected checkpoints appear at the end for comparison; this walkthrough does not replace the unit tests.

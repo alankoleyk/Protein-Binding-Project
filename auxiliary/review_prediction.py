@@ -1,6 +1,6 @@
-"""Console walkthrough of the real presenter, with manually completed tasks.
+"""Temporary classroom review walkthrough; remove after the review.
 
-Run from the repository root: python src/review_prediction.py
+Run from the repository root: PYTHONPATH=src python auxiliary/review_prediction.py
 """
 
 from collections import deque
