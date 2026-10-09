@@ -108,6 +108,18 @@ Fast presenter tests, without starting Qt or downloading the viewer resources:
 PYTHONPATH=src python -m unittest discover -s tests/unit -v
 ```
 
+### Code review walkthrough
+
+To follow `predict()`, `_invalidate()`, and `_finish()` in the console, run:
+
+```bash
+python src/review_prediction.py
+```
+
+This uses the real presenter and demo backend with manually completed tasks. It prints the input, revision, busy state, result, error, and pending task count after each action. Two scenarios show an outdated request succeeding or failing while the current request is still pending. Expected checkpoints appear at the end for comparison; this walkthrough does not replace the unit tests.
+
+Only Python 3.12 and the tracked files are needed. No Qt, threads, resource downloads, or additional packages are required.
+
 ## Team to-do list
 
 - [ ] Natalie: Data extraction
