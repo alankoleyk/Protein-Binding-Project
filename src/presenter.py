@@ -1,5 +1,3 @@
-"""Application flow, with no knowledge of Qt widgets or the backend's API."""
-
 from dataclasses import replace
 
 from contracts import (
