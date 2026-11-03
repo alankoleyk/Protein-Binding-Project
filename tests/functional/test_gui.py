@@ -91,7 +91,7 @@ class GuiTests(unittest.TestCase):
         self.wait_for(lambda: self.presenter.state.prediction is not None)
         self.assertEqual(self.window.prediction_value.text(), "+2.20")
         self.assertEqual(self.presenter.state.prediction.request.label, "D33A")
-        self.assertIn("Placeholder", self.window.prediction_note.text())
+        self.assertEqual(self.window.prediction_note.text(), "To be calibrated")
 
 
 if __name__ == "__main__":
