@@ -1,5 +1,6 @@
 """A Qt widget that owns the entire 3Dmol.js communication boundary."""
 
+import gzip
 import json
 from dataclasses import asdict
 from pathlib import Path
@@ -65,10 +66,14 @@ class MoleculeView(QWebEngineView):
 
     def load_structure(self, structure: Structure):
         self._scene_ready = False
+        opener = gzip.open if structure.path.suffix.lower() == ".gz" else open
+        with opener(structure.path, "rt") as source:
+            data = source.read()
         self._scene = json.dumps(
             {
                 "code": structure.code,
-                "pdb": structure.path.read_text(),
+                "data": data,
+                "format": structure.file_format,
                 "chains": [asdict(chain) for chain in structure.chains],
                 "residues": [asdict(residue.key) for residue in structure.residues],
             }
@@ -80,7 +85,7 @@ class MoleculeView(QWebEngineView):
         payload = json.dumps(
             {
                 "selected": asdict(state.selected),
-                "interface": [asdict(key) for key in state.interface],
+                "contacts": [asdict(key) for key in state.structure.contact_sites],
                 "highlight": state.highlight,
                 "representation": state.representation,
             }

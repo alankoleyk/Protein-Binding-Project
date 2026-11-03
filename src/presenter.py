@@ -22,7 +22,9 @@ class MainPresenter:
             structure=structure,
             selected=structure.initial_selection,
             sequence_chain=structure.initial_selection.chain,
-            interface=backend.find_interface(structure, 5.0),
+            replacement="G"
+            if structure.residue(structure.initial_selection).letter == "A"
+            else "A",
         )
 
     def start(self) -> None:
@@ -45,13 +47,8 @@ class MainPresenter:
             replacement = "G" if residue.letter == "A" else "A"
         self._invalidate(selected=key, sequence_chain=key.chain, replacement=replacement)
 
-    def set_cutoff(self, cutoff: float) -> None:
-        if cutoff != self.state.cutoff:
-            interface = self.backend.find_interface(self.state.structure, cutoff)
-            self._invalidate(cutoff=cutoff, interface=interface)
-
     def set_replacement(self, replacement: str) -> None:
-        if replacement != self.state.replacement:
+        if self.state.can_mutate and replacement != self.state.replacement:
             self._invalidate(replacement=replacement)
 
     def set_sequence_chain(self, chain: str) -> None:
@@ -64,7 +61,7 @@ class MainPresenter:
         self._render(representation=representation)
 
     def predict(self) -> None:
-        if self.state.busy:
+        if self.state.busy or not self.state.can_mutate:
             return
         request = self.state.request
         revision = self._revision

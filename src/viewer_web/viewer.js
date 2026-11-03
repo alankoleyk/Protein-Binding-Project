@@ -19,12 +19,11 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
     chains = scene.chains;
     const chainIds = new Set(chains.map((chain) => chain.id));
     const residueKeys = new Set(scene.residues.map(keyOf));
-    const pdb = scene.pdb.split(/\r?\n/).filter((line) => {
-      if (!/^(ATOM  |HETATM|TER   )/.test(line)) return true;
-      return line.startsWith('ATOM') && chainIds.has(line[21]) && [' ', 'A'].includes(line[16]);
-    }).join('\n');
     viewer.clear();
-    viewer.addModel(pdb, 'pdb');
+    const model = viewer.addModel(scene.data, scene.format);
+    model.removeAtoms(model.selectedAtoms({
+      predicate: (atom) => atom.hetflag || !residueKeys.has(atomKey(atom)),
+    }));
     for (const chain of chains) {
       viewer.setStyle({ chain: chain.id }, { cartoon: { color: chain.color } });
     }
@@ -44,7 +43,7 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
   function applyStyle(serialized) {
     const state = JSON.parse(serialized);
     selected = state.selected;
-    const interfaceKeys = new Set(state.interface.map(keyOf));
+    const contactKeys = new Set(state.contacts.map(keyOf));
     viewer.removeAllSurfaces();
     viewer.removeAllLabels();
     viewer.setStyle({}, {});
@@ -57,7 +56,7 @@ new QWebChannel(qt.webChannelTransport, ({ objects: { bridge } }) => {
           { color: chain.color, opacity: 0.8 }, { chain: chain.id });
       }
       if (state.highlight) {
-        viewer.addStyle({ chain: chain.id, predicate: (atom) => interfaceKeys.has(atomKey(atom)) },
+        viewer.addStyle({ chain: chain.id, predicate: (atom) => contactKeys.has(atomKey(atom)) },
           { stick: { color: chain.color, radius: 0.16 } });
       }
     }
