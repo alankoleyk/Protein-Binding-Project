@@ -1,5 +1,7 @@
 """Single-page Qt view. All application decisions belong to the presenter."""
 
+from collections import Counter
+
 from PySide6.QtCore import QSignalBlocker, QSize, Qt, Signal
 from PySide6.QtGui import QColor, QLinearGradient, QPainter, QPen
 from PySide6.QtWidgets import (
@@ -8,17 +10,13 @@ from PySide6.QtWidgets import (
     QFrame,
     QGridLayout,
     QHBoxLayout,
-    QHeaderView,
     QLabel,
     QLayout,
     QMainWindow,
     QPushButton,
     QScrollArea,
     QSizePolicy,
-    QSlider,
     QSplitter,
-    QTableWidget,
-    QTableWidgetItem,
     QToolButton,
     QVBoxLayout,
     QWidget,
@@ -115,7 +113,7 @@ class SequenceGrid(QWidget):
         self._keys = ()
         self._columns = 0
 
-    def show_residues(self, residues, interface, selected):
+    def show_residues(self, residues, contacts, selected):
         keys = tuple(residue.key for residue in residues)
         if keys != self._keys:
             for button in self.buttons.values():
@@ -128,7 +126,9 @@ class SequenceGrid(QWidget):
                 button.setObjectName("residue")
                 button.setText(f"{residue.letter}\n{residue.key.number}{residue.key.insertion}")
                 button.setFixedSize(self.CELL_WIDTH, self.CELL_HEIGHT)
-                description = f"{AMINO_ACIDS[residue.letter]} {residue.key.number} · Chain {residue.key.chain}"
+                name = AMINO_ACIDS.get(residue.letter, residue.name)
+                status = "Contact site" if residue.key in contacts else "View only"
+                description = f"{name} {residue.key.number} · Chain {residue.key.chain} · {status}"
                 button.setToolTip(description)
                 button.setAccessibleName(description)
                 button.clicked.connect(
@@ -137,7 +137,7 @@ class SequenceGrid(QWidget):
                 self.buttons[residue.key] = button
             self._arrange()
         for key, button in self.buttons.items():
-            tone = "selected" if key == selected else key.chain if key in interface else "muted"
+            tone = "selected" if key == selected else "contact" if key in contacts else "muted"
             if button.property("tone") != tone:
                 button.setProperty("tone", tone)
                 button.style().unpolish(button)
@@ -166,7 +166,7 @@ class AffinityScale(QWidget):
         super().__init__()
         self.value = None
         self.setFixedHeight(30)
-        self.setAccessibleName("Binding change scale, minus four to plus four kcal per mole")
+        self.setAccessibleName("Placeholder score scale, minus four to plus four")
 
     def paintEvent(self, event):
         painter = QPainter(self)
@@ -183,7 +183,7 @@ class AffinityScale(QWidget):
             painter.setPen(QPen(QColor("#eeeeee"), 2))
             painter.drawLine(x, 2, x, 12)
         painter.setPen(QColor("#989898"))
-        painter.drawText(0, 27, "Stronger −4")
+        painter.drawText(0, 27, "Tighter −4")
         painter.drawText(self.width() // 2 - 4, 27, "0")
         text = "+4 Weaker"
         painter.drawText(self.width() - painter.fontMetrics().horizontalAdvance(text), 27, text)
@@ -191,7 +191,6 @@ class AffinityScale(QWidget):
 
 class MainWindow(QMainWindow):
     residue_selected = Signal(object)
-    cutoff_changed = Signal(float)
     replacement_changed = Signal(str)
     chain_changed = Signal(str)
     highlight_changed = Signal(bool)
@@ -312,7 +311,9 @@ class MainWindow(QMainWindow):
         self.sequence.height_changed.connect(
             lambda height: sequence_scroll.setFixedHeight(min(height, 132))
         )
-        sequence_scroll.setToolTip("Colored residues meet the interface cutoff")
+        sequence_scroll.setToolTip(
+            "Highlighted contact sites can be mutated; other residues are view only"
+        )
         sequence_layout.addWidget(sequence_scroll)
         layout.addWidget(sequence_card)
         return left
@@ -361,27 +362,13 @@ class MainWindow(QMainWindow):
         layout.setSpacing(8)
 
         inputs, inputs_layout = card()
-        self.interface_count = badge(82)
+        self.contact_count = badge(64)
         inputs_layout.addWidget(
-            section_header(label("Interface & mutation", "sectionTitle"), self.interface_count)
+            section_header(label("Contact sites & mutation", "sectionTitle"), self.contact_count)
         )
-        cutoff_heading = QHBoxLayout()
-        cutoff_heading.addWidget(label("Contact cutoff"))
-        self.cutoff = QSlider(Qt.Orientation.Horizontal)
-        self.cutoff.setObjectName("cutoff")
-        self.cutoff.setAccessibleName("Contact cutoff in tenths of an angstrom")
-        self.cutoff.setRange(30, 80)
-        self.cutoff.setValue(50)
-        self.cutoff.setToolTip("Contact cutoff: 3 Å (close contacts) to 8 Å (broader shell)")
-        self.cutoff.valueChanged.connect(lambda value: self.cutoff_changed.emit(value / 10))
-        cutoff_heading.addWidget(self.cutoff, 1)
-        self.cutoff_value = label("5.0 Å", "cutoffValue")
-        self.cutoff_value.setFixedSize(52, 24)
-        self.cutoff_value.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        cutoff_heading.addWidget(self.cutoff_value)
-        inputs_layout.addLayout(cutoff_heading)
-        self.highlight = QCheckBox("Highlight interface")
-        self.highlight.setObjectName("highlightInterface")
+        inputs_layout.addWidget(label("Predefined HRas–PI3K contact sites", "muted"))
+        self.highlight = QCheckBox("Highlight contact sites")
+        self.highlight.setObjectName("highlightContacts")
         self.highlight.setChecked(True)
         self.highlight.toggled.connect(self.highlight_changed)
         inputs_layout.addWidget(self.highlight)
@@ -410,7 +397,7 @@ class MainWindow(QMainWindow):
             lambda: self.replacement_changed.emit(self.replacement.currentData())
         )
         inputs_layout.addLayout(row(label("Replace with", "muted"), self.replacement))
-        self.predict_button = QPushButton("Preview mutation effect  →")
+        self.predict_button = QPushButton("Calculate mutation score  →")
         self.predict_button.setObjectName("predictButton")
         self.predict_button.setMinimumHeight(28)
         self.predict_button.clicked.connect(self.prediction_requested)
@@ -418,60 +405,33 @@ class MainWindow(QMainWindow):
         layout.addWidget(inputs)
 
         result, result_layout = card("resultCard")
-        self.prediction_title = label("Predicted ΔΔG", "muted")
+        self.prediction_title = label("Mutation score", "muted")
         result_layout.addWidget(
-            section_header(self.prediction_title, badge(42, "DEMO", "demoBadge"))
+            section_header(self.prediction_title, badge(42, "RULE", "ruleBadge"))
         )
         self.prediction_value = label("—", "predictionValue")
-        value_row = row(self.prediction_value, label("kcal/mol", "muted"))
+        value_row = row(self.prediction_value, label("score units", "muted"))
         value_row.addStretch()
-        self.prediction_direction = label("Ready to preview", "predictionDirection")
+        self.prediction_direction = label("Ready to calculate", "predictionDirection")
         value_row.addWidget(self.prediction_direction)
         result_layout.addLayout(value_row)
         self.scale = AffinityScale()
         result_layout.addWidget(self.scale)
-        experiment_row = QHBoxLayout()
-        experiment_row.addWidget(label("Experimental ΔΔG (demo)", "muted"))
-        experiment_row.addStretch()
-        self.experimental_value = label("—", "experimentalValue")
-        experiment_row.addWidget(self.experimental_value)
-        result_layout.addLayout(experiment_row)
-        self.prediction_note = label("Illustrative values · No model connected", "muted", wrap=True)
+        self.prediction_note = label("Placeholder rule · Not a calibrated ΔΔG", "muted", wrap=True)
         result_layout.addWidget(self.prediction_note)
         layout.addWidget(result)
 
-        neighbors, neighbors_layout = card()
-        self.neighbor_count = badge(32)
-        neighbors_layout.addWidget(
-            section_header(label("Nearby partner residues", "sectionTitle"), self.neighbor_count)
+        partners, partners_layout = card()
+        self.partner_count = badge(32)
+        partners_layout.addWidget(
+            section_header(label("PI3K contact partners", "sectionTitle"), self.partner_count)
         )
-        self.neighbors = QTableWidget(0, 3)
-        self.neighbors.setObjectName("neighbors")
-        self.neighbors.setHorizontalHeaderLabels(["Residue", "Chain", "Distance"])
-        self.neighbors.verticalHeader().hide()
-        self.neighbors.verticalHeader().setDefaultSectionSize(23)
-        self.neighbors.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
-        self.neighbors.setShowGrid(False)
-        self.neighbors.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
-        self.neighbors.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
-        self.neighbors.setSelectionMode(QTableWidget.SelectionMode.SingleSelection)
-        self.neighbors.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
-        self.neighbors.horizontalHeader().setSectionResizeMode(
-            1, QHeaderView.ResizeMode.ResizeToContents
-        )
-        self.neighbors.horizontalHeader().setSectionResizeMode(
-            2, QHeaderView.ResizeMode.ResizeToContents
-        )
-        self.neighbors.cellClicked.connect(self._select_neighbor)
-        neighbors_layout.addWidget(self.neighbors)
-        self.neighbors.setToolTip("Click a row to inspect its residue")
-        layout.addWidget(neighbors)
+        self.partner_summary = label("", "muted", wrap=True)
+        partners_layout.addWidget(self.partner_summary)
+        partners_layout.addWidget(label("PI3K coordinates are not loaded.", "muted"))
+        layout.addWidget(partners)
         layout.addStretch()
         return scroll
-
-    def _select_neighbor(self, row_index, column):
-        key = self.neighbors.item(row_index, 0).data(Qt.ItemDataRole.UserRole)
-        self.residue_selected.emit(key)
 
     def render(self, state: ViewState):
         if self._structure is not state.structure:
@@ -494,6 +454,7 @@ class MainWindow(QMainWindow):
                 self.chain.clear()
                 for chain in state.structure.chains:
                     self.chain.addItem(f"{chain.id} · {chain.name}", chain.id)
+            self.chain.setVisible(len(state.structure.chains) > 1)
             self.viewer.load_structure(state.structure)
 
         residue = state.structure.residue(state.selected)
@@ -507,75 +468,66 @@ class MainWindow(QMainWindow):
             self.replacement.setCurrentIndex(self.replacement.findData(state.replacement))
         with QSignalBlocker(self.chain):
             self.chain.setCurrentIndex(self.chain.findData(state.sequence_chain))
-        with QSignalBlocker(self.cutoff):
-            self.cutoff.setValue(round(state.cutoff * 10))
         with QSignalBlocker(self.highlight):
             self.highlight.setChecked(state.highlight)
         with QSignalBlocker(self.representation):
             self.representation.setCurrentIndex(self.representation.findData(state.representation))
 
-        self.interface_count.setText(f"{len(state.interface)} residues")
-        self.cutoff_value.setText(f"{state.cutoff:.1f} Å")
+        self.contact_count.setText(f"{len(state.structure.contact_sites)} sites")
         self.residue_badge.setText(
             f'{residue.letter}<br><span style="font-size:10px">{residue.name}</span>'
         )
-        self.residue_name.setText(f"{AMINO_ACIDS[residue.letter]} {state.selected.number}")
-        membership = (
-            "Interface residue" if state.selected in state.interface else "Outside interface"
-        )
+        name = AMINO_ACIDS.get(residue.letter, residue.name)
+        self.residue_name.setText(f"{name} {state.selected.number}{state.selected.insertion}")
+        membership = "Contact site" if state.can_mutate else "View only · Not a contact site"
         self.residue_details.setText(f"Chain {state.selected.chain} · {membership}")
         chain_residues = tuple(
             r for r in state.structure.residues if r.key.chain == state.sequence_chain
         )
-        self.sequence.show_residues(chain_residues, state.interface, state.selected)
+        self.sequence.show_residues(chain_residues, state.structure.contact_sites, state.selected)
         self.sequence_count.setText(f"{len(chain_residues)} residues")
         self.viewer.show_state(state)
-        self.predict_button.setEnabled(not state.busy)
-        self.predict_button.setText(
-            "Loading preview…" if state.busy else "Preview mutation effect  →"
-        )
+        self.replacement.setEnabled(state.can_mutate)
+        self.predict_button.setEnabled(state.can_mutate and not state.busy)
+        self.predict_button.setText("Calculating…" if state.busy else "Calculate mutation score  →")
         self._show_prediction(state)
 
-        neighbors = tuple(n for n in residue.neighbors if n.distance <= state.cutoff)
-        self.neighbor_count.setText(str(len(neighbors)))
-        self.neighbors.setRowCount(len(neighbors))
-        for index, neighbor in enumerate(neighbors):
-            name = QTableWidgetItem(f"{neighbor.name} {neighbor.key.number}")
-            name.setData(Qt.ItemDataRole.UserRole, neighbor.key)
-            self.neighbors.setItem(index, 0, name)
-            self.neighbors.setItem(index, 1, QTableWidgetItem(neighbor.key.chain))
-            distance = QTableWidgetItem(f"{neighbor.distance:.2f} Å")
-            distance.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-            self.neighbors.setItem(index, 2, distance)
-        self.neighbors.ensurePolished()
-        header_height = self.neighbors.horizontalHeader().sizeHint().height()
-        self.neighbors.setFixedHeight(
-            header_height + 2 * self.neighbors.frameWidth() + max(2, min(8, len(neighbors))) * 23
+        self.partner_count.setText(str(len(residue.partners)))
+        self.partner_summary.setText(
+            " · ".join(
+                f"{AMINO_ACIDS[letter]} ({letter}) × {count}"
+                for letter, count in Counter(residue.partners).items()
+            )
+            if residue.partners
+            else "No predefined contacts at this site."
         )
 
     def _show_prediction(self, state):
         result = state.prediction
-        self.prediction_title.setText(f"Predicted ΔΔG · {state.request.label}")
+        self.prediction_title.setText(
+            f"Mutation score · {state.request.label}" if state.can_mutate else "Mutation score"
+        )
         value = result.predicted if result else None
         self.prediction_value.setText(f"{value:+.2f}" if value is not None else "—")
         self.scale.value = value
         self.scale.update()
-        experimental = result.experimental if result else None
-        self.experimental_value.setText(f"{experimental:+.2f}" if experimental is not None else "—")
-        note = "Illustrative values · No model connected"
+        note = "To be calibrated"
         if state.error:
-            direction, note = "Preview failed", state.error
+            direction, note = "Calculation failed", state.error
         elif state.busy:
-            direction = "Loading preview…"
+            direction = "Calculating…"
+        elif not state.can_mutate:
+            direction, note = (
+                "View only",
+                "Select a highlighted contact site to calculate a mutation.",
+            )
         elif result is None:
-            direction = "Ready to preview"
-        elif value is None:
-            direction, note = "No demo value", "Try D39 → A or N for a prepared example."
+            direction = "Ready to calculate"
         else:
             direction = (
-                "↗  Weaker binding"
+                "↗  Weaker (rule)"
                 if value > 0
-                else "↘  Stronger binding"
+                else "↘  Tighter (rule)"
                 if value < 0
                 else "No change"
             )

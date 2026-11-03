@@ -33,8 +33,6 @@ matrix = pd.DataFrame(
 def binding(ras_aa, pi3k_aa):
     return matrix.loc[ras_aa, pi3k_aa]
 
-print(binding("D", "R"))
-
 CONTACTS = {
     25: ("Q", ["L", "S"]),
     33: ("D", ["K", "K"]),   # K255, K251 (K251 uncertain)
@@ -77,5 +75,7 @@ def binding_strength(mutations):
             mut_total += binding(new_aa, p)
     return mut_total - wt_total
 
-binding_strength(["Q25L"])
+if __name__ == "__main__":
+    print(binding("D", "R"))
+    print(binding_strength(["D33E"]))
 
