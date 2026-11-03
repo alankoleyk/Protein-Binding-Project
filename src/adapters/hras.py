@@ -1,5 +1,3 @@
-"""Translate the team's structure parser and fixed HRas contact table for the GUI."""
-
 from pathlib import Path
 
 from backend.aa_array import AA, CONTACTS, binding_strength

@@ -511,7 +511,7 @@ class MainWindow(QMainWindow):
         self.prediction_value.setText(f"{value:+.2f}" if value is not None else "—")
         self.scale.value = value
         self.scale.update()
-        note = "Placeholder rule · Not a calibrated ΔΔG"
+        note = "To be calibrated"
         if state.error:
             direction, note = "Calculation failed", state.error
         elif state.busy:
