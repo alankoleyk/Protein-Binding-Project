@@ -77,5 +77,5 @@ def binding_strength(mutations):
             mut_total += binding(new_aa, p)
     return mut_total - wt_total
 
-binding_strength(["Q25L"])
+binding_strength(["P24L"])
 
