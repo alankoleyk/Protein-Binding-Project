@@ -18,7 +18,7 @@ class ProteinOnly(Select):
 
 # Paths
 data_dir = "data"
-input_file = os.path.join(data_dir, "6XRL.cif")   # match your actual file name
+input_file = os.path.join(data_dir, "6XRL.cif")  
 output_file = os.path.join(data_dir, "pi3k_gamma_apo_isolated.pdb")
 
 if not os.path.exists(input_file):
